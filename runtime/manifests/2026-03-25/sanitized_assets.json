@@ -1,6 +1,6 @@
 [
   {
-    "run_id": "kanyanbao-2026-03-25-233236",
+    "run_id": "kanyanbao-2026-03-25-233624",
     "source_report_id": "42970939",
     "ticker": "SE",
     "name": "Sea",
@@ -8,7 +8,7 @@
     "raw_pdf_path": "runtime/raw_reports/2026-03-25/2026-03-25_SE_42970939_raw.pdf",
     "sanitized_pdf_path": "runtime/sanitized_reports/2026-03-25/2026-03-25_SE_42970939_sanitized.pdf",
     "page_count": 22,
-    "file_sha256": "0c267562c103038afded280053fbece6eabf20e97457062213428fc3b50acc93",
+    "file_sha256": "c2581f8fe68e9e3912453449494c338dfbc2c24b922a3e5324c42254a37d2cb6",
     "watermark_hits": [
       {
         "page": 1,
