@@ -1,0 +1,67 @@
+﻿ticker,name,section,aliases,is_active
+AAOI,Applied Optoelectronics,科技,"Applied Optoelectronics|AAOI",true
+AAPL,Apple,科技,"Apple|AAPL",true
+ADBE,Adobe,科技,"Adobe|ADBE",true
+ADI,Analog Devices,科技,"Analog Devices|ADI",true
+ALAB,Astera Labs,科技,"Astera Labs|ALAB",true
+AMAT,Applied Materials,科技,"Applied Materials|AMAT",true
+AMD,AMD,科技,"AMD|AMD",true
+AMGN,Amgen,医药,"Amgen|AMGN",true
+AMZN,Amazon,消费,"Amazon|AMZN",true
+APP,AppLovin,科技,"AppLovin|APP",true
+ASML,ASML,科技,"ASML|ASML",true
+AVGO,Broadcom,科技,"Broadcom|AVGO",true
+AXTI,AXT,科技,"AXT|AXTI",true
+AZN,AstraZeneca,医药,"AstraZeneca|AZN",true
+BIDU,Baidu,科技,"Baidu|BIDU",true
+BMNR,BitMine,加密,"BitMine|BMNR",true
+BTDR,Bitdeer,加密,"Bitdeer|BTDR",true
+CDNS,Cadence,科技,"Cadence|CDNS",true
+CIEN,Ciena,科技,"Ciena|CIEN",true
+CLS,Celestica,制造,"Celestica|CLS",true
+CLSK,CleanSpark,加密,"CleanSpark|CLSK",true
+COIN,Coinbase,加密,"Coinbase|COIN",true
+CRCL,Circle,加密,"Circle|CRCL",true
+CRM,Salesforce,科技,"Salesforce|CRM",true
+CRWD,CrowdStrike,科技,"CrowdStrike|CRWD",true
+CYD,China Yuchai,制造,"China Yuchai|CYD",true
+FUTU,Futu,科技,"Futu|FUTU",true
+GILD,Gilead,医药,"Gilead|GILD",true
+GOOGL,Alphabet,科技,"Alphabet|GOOGL",true
+HOOD,HOOD,科技,"HOOD|HOOD",true
+HSAI,Hesai,科技,"Hesai|HSAI",true
+HUT,Hut 8,加密,"Hut 8|HUT",true
+INTC,Intel,科技,"Intel|INTC",true
+IREN,IREN,加密,"IREN|IREN",true
+IRON,Disc Medicine,科技,"Disc Medicine|IRON",true
+KLAC,KLA,科技,"KLA|KLAC",true
+LITE,Lumentum,科技,"Lumentum|LITE",true
+LRCX,Lam Research,科技,"Lam Research|LRCX",true
+MARA,Marathon Digital,加密,"Marathon Digital|MARA",true
+MDB,MongoDB,科技,"MongoDB|MDB",true
+META,Meta,科技,"Meta|META",true
+MRVL,Marvell,科技,"Marvell|MRVL",true
+MSFT,Microsoft,科技,"Microsoft|MSFT",true
+MSTR,Strategy,加密,"Strategy|MSTR",true
+MU,Micron,科技,"Micron|MU",true
+NBIS,Nebius,科技,"Nebius|NBIS",true
+NOW,ServiceNow,科技,"ServiceNow|NOW",true
+NVDA,NVIDIA,科技,"NVIDIA|NVDA",true
+NVTS,Navitas,科技,"Navitas|NVTS",true
+OKTA,Okta,科技,"Okta|OKTA",true
+PANW,Palo Alto Networks,科技,"Palo Alto Networks|PANW",true
+RIOT,Riot Platforms,加密,"Riot Platforms|RIOT",true
+RMBS,Rambus,科技,"Rambus|RMBS",true
+SE,Sea,消费,"Sea|SE",true
+SMCI,Super Micro Computer,科技,"Super Micro Computer|SMCI",true
+SNDK,Sandisk,科技,"Sandisk|SNDK",true
+SNOW,Snowflake,科技,"Snowflake|SNOW",true
+SNPS,Synopsys,科技,"Synopsys|SNPS",true
+TSLA,Tesla,制造,"Tesla|TSLA",true
+TTMI,TTM Technologies,制造,"TTM Technologies|TTMI",true
+TXN,Texas Instruments,科技,"Texas Instruments|TXN",true
+U,Unity,科技,"Unity|U",true
+UCTT,Ultra Clean Holdings,制造,"Ultra Clean Holdings|UCTT",true
+VST,Vistra,制造,"Vistra|VST",true
+WDC,Western Digital,科技,"Western Digital|WDC",true
+ZEPP,Zepp Health,消费,"Zepp Health|ZEPP",true

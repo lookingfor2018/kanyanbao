@@ -1,0 +1,24 @@
+{
+  "name": "kanyanbao",
+  "version": "1.0.0",
+  "description": "Kanyanbao US equity report orchestration pipeline",
+  "main": "src/cli/orchestrate.js",
+  "scripts": {
+    "orchestrate": "node src/cli/orchestrate.js",
+    "notify": "node src/cli/notify-latest.js",
+    "test": "node -e \"console.log('No tests configured yet')\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.917.0",
+    "@aws-sdk/s3-request-presigner": "^3.917.0",
+    "dotenv": "^16.6.1",
+    "playwright": "^1.58.2"
+  }
+}

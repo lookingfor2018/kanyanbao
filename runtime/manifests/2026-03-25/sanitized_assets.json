@@ -1,0 +1,61 @@
+[
+  {
+    "run_id": "kanyanbao-2026-03-25-152312",
+    "source_report_id": "42970939",
+    "ticker": "SE",
+    "name": "Sea",
+    "section": "消费",
+    "raw_pdf_path": "runtime/raw_reports/2026-03-25/2026-03-25_SE_42970939_raw.pdf",
+    "sanitized_pdf_path": "runtime/sanitized_reports/2026-03-25/2026-03-25_SE_42970939_sanitized.pdf",
+    "page_count": 22,
+    "file_sha256": "5f6044eafa90491e7726d5bc1c807b24032800ebf116723a7df82302f3f7c0b6",
+    "watermark_hits": [
+      {
+        "page": 1,
+        "rule_id": "literal",
+        "text": "���������"
+      },
+      {
+        "page": 1,
+        "rule_id": "literal",
+        "text": "�Ѽ�¼��־������"
+      },
+      {
+        "page": 1,
+        "rule_id": "literal_search",
+        "text": "���������"
+      },
+      {
+        "page": 1,
+        "rule_id": "literal_search",
+        "text": "�Ѽ�¼��־������"
+      },
+      {
+        "page": 20,
+        "rule_id": "literal",
+        "text": "���������"
+      },
+      {
+        "page": 20,
+        "rule_id": "literal_search",
+        "text": "���������"
+      },
+      {
+        "page": 21,
+        "rule_id": "literal",
+        "text": "���������"
+      },
+      {
+        "page": 21,
+        "rule_id": "literal_search",
+        "text": "���������"
+      }
+    ],
+    "sanitization_status": "completed",
+    "ready_for_summary": true,
+    "broker": "N/A",
+    "upload_at": "2026-03-19T07:08:00+08:00",
+    "is_new": false,
+    "error": null
+  }
+]

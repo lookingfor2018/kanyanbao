@@ -1,0 +1,50 @@
+[
+  {
+    "tag": "DIV",
+    "text": "首页\n                \n                \n                    看研报\n                \n  ",
+    "href": "",
+    "cls": "header_box clearfix"
+  },
+  {
+    "tag": "DIV",
+    "text": "首页\n                \n                \n                    看研报\n                \n  ",
+    "href": "",
+    "cls": "nav"
+  },
+  {
+    "tag": "A",
+    "text": "看研报",
+    "href": "/newreport/reportHome.htm",
+    "cls": "nav_plr current"
+  },
+  {
+    "tag": "DIV",
+    "text": "报告类型\n    \n\n        \n            \n            \n                \n                \n",
+    "href": "",
+    "cls": "index_con clearfix mt70"
+  },
+  {
+    "tag": "DIV",
+    "text": "热门(默认) \n            \n            首次覆盖\n            首次调研\n            评级变动\n        ",
+    "href": "",
+    "cls": "sack_center"
+  },
+  {
+    "tag": "DIV",
+    "text": "70年代石油危机的政策应对有何启示？\n                                \n                            ",
+    "href": "",
+    "cls": "index_tab cur "
+  },
+  {
+    "tag": "DIV",
+    "text": "70年代石油危机的政策应对有何启示？\n                                \n                            ",
+    "href": "",
+    "cls": "same_container"
+  },
+  {
+    "tag": "DIV",
+    "text": "Vibe Coding：打造一人量化团队\n                                \n                          ",
+    "href": "",
+    "cls": "same_box"
+  }
+]

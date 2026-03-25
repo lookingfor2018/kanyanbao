@@ -1,0 +1,199 @@
+name: kanyanbao-digest
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Run mode"
+        required: false
+        default: manual
+        type: choice
+        options:
+          - manual
+          - scheduled
+          - recovery
+      run_date:
+        description: "Run date in YYYY-MM-DD (optional)"
+        required: false
+        type: string
+      skip_push:
+        description: "Skip Feishu push in build job"
+        required: false
+        default: true
+        type: boolean
+  schedule:
+    - cron: "30 0,5 * * *"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: kanyanbao-pages
+  cancel-in-progress: false
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      RUN_TIMEZONE: Asia/Shanghai
+      DEFAULT_RUN_MODE: scheduled
+      SUMMARY_API_BASE_URL: ${{ vars.SUMMARY_API_BASE_URL || 'https://gmn.chuangzuoli.com' }}
+      SUMMARY_API_KEY: ${{ secrets.SUMMARY_API_KEY }}
+      SUMMARY_MODEL: ${{ vars.SUMMARY_MODEL || 'gpt-5.3' }}
+      SITE_BASE_URL: ${{ vars.SITE_BASE_URL }}
+      FEISHU_ENABLE_PUSH: "false"
+      FEISHU_CHAT_ID: ${{ secrets.FEISHU_CHAT_ID }}
+      FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
+      FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
+      FEISHU_VERIFICATION_TOKEN: ${{ secrets.FEISHU_VERIFICATION_TOKEN }}
+      FEISHU_ENCRYPT_KEY: ${{ secrets.FEISHU_ENCRYPT_KEY }}
+      STORAGE_ENDPOINT: ${{ vars.STORAGE_ENDPOINT }}
+      STORAGE_REGION: ${{ vars.STORAGE_REGION || 'auto' }}
+      STORAGE_BUCKET: ${{ vars.STORAGE_BUCKET }}
+      STORAGE_ACCESS_KEY: ${{ secrets.STORAGE_ACCESS_KEY }}
+      STORAGE_SECRET_KEY: ${{ secrets.STORAGE_SECRET_KEY }}
+      STORAGE_PREFIX: ${{ vars.STORAGE_PREFIX || 'reports' }}
+      SIGNED_URL_TTL_SECONDS: ${{ vars.SIGNED_URL_TTL_SECONDS || '604800' }}
+      SHORTLINK_PROVIDER: ${{ vars.SHORTLINK_PROVIDER || 'static_redirect' }}
+      SHORTLINK_BASE_URL: ${{ vars.SHORTLINK_BASE_URL || vars.SITE_BASE_URL }}
+      SHORTLINK_SIGNING_KEY: ${{ secrets.SHORTLINK_SIGNING_KEY }}
+      SHORTLINK_API_ENDPOINT: ${{ vars.SHORTLINK_API_ENDPOINT }}
+      SHORTLINK_API_TOKEN: ${{ secrets.SHORTLINK_API_TOKEN }}
+      VERIFY_SIGNED_URL: "true"
+      VERIFY_SHORTLINK: "true"
+      LINK_VERIFY_TIMEOUT_MS: "20000"
+      ENABLE_LIVE_ACQUISITION: "false"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install Python dependencies
+        run: python -m pip install --upgrade pip pymupdf
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run orchestrator
+        shell: bash
+        run: |
+          MODE="${{ github.event.inputs.mode }}"
+          RUN_DATE="${{ github.event.inputs.run_date }}"
+          SKIP_PUSH="${{ github.event.inputs.skip_push }}"
+
+          if [ "${{ github.event_name }}" != "workflow_dispatch" ]; then
+            MODE="scheduled"
+            RUN_DATE=""
+            SKIP_PUSH="true"
+          fi
+
+          CMD="npm run orchestrate -- --mode ${MODE:-scheduled}"
+          if [ -n "${RUN_DATE}" ]; then
+            CMD="${CMD} --run-date ${RUN_DATE}"
+          fi
+          if [ "${SKIP_PUSH}" = "true" ]; then
+            CMD="${CMD} --skip-push"
+          fi
+          echo "Running: ${CMD}"
+          eval "${CMD}"
+
+      - name: Commit generated dist and publish artifacts
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "dist" "runtime/published" "runtime/structured" "runtime/manifests"
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+          else
+            git commit -m "chore(kanyanbao): refresh daily digest artifacts"
+            git push
+          fi
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  notify:
+    needs: deploy
+    runs-on: ubuntu-latest
+    env:
+      FEISHU_ENABLE_PUSH: "true"
+      FEISHU_CHAT_ID: ${{ secrets.FEISHU_CHAT_ID }}
+      FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
+      FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
+      FEISHU_VERIFICATION_TOKEN: ${{ secrets.FEISHU_VERIFICATION_TOKEN }}
+      FEISHU_ENCRYPT_KEY: ${{ secrets.FEISHU_ENCRYPT_KEY }}
+      FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Notify latest batch in Feishu
+        shell: bash
+        run: |
+          RUN_DATE="${{ github.event.inputs.run_date }}"
+          if [ -n "${RUN_DATE}" ]; then
+            npm run notify -- --run-date "${RUN_DATE}"
+          else
+            npm run notify
+          fi
+
+      - name: Commit notify-state changes
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "runtime/published"
+          if git diff --cached --quiet; then
+            echo "No notify-state changes to commit."
+          else
+            git commit -m "chore(kanyanbao): record notify status"
+            git push
+          fi

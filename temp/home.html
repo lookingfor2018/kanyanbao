@@ -1,0 +1,210 @@
+
+
+
+
+
+
+
+<!--www.kanzhiqiu.com	https://www.kanzhiqiu.com/	Mozilla/5.0 (Windows NT; Windows NT 10.0; zh-CN) WindowsPowerShell/5.1.26100.7920	101.87.5.171-->
+
+<!doctype html>
+<html>
+<head>
+    <title>知丘 看研报</title>
+    <meta HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; CHARSET=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+
+
+
+
+
+<script type="text/javascript" src="/newweb/js/jquery/3.7.1/jquery-3.7.1.js?t=1774357088050"></script>
+<script type="text/javascript" src="/newweb/js/jquery/jquery-migrate/jquery-migrate-3.5.2.min.js?t=1774357088050"></script>
+
+
+
+
+    <script type="text/javascript" src="/js/cookie.js"></script>
+    
+
+
+    <style type="text/css">
+        .t-hide {
+            display: none;
+        }
+
+        .light {
+            color: gray;
+            font-size: small;
+        }
+
+        .site_remark {
+            font-size: smaller;
+            margin-top: 10px;
+            min-width: 400px;
+            max-width: 600px;
+            color: gray;
+        }
+        .warning{color:red;}
+        .footer{
+            margin-top: 50px;
+            font-size: smaller;
+        }
+    </style>
+    <LINK type="text/css" rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+
+    <script type="text/javascript">
+        /*var cookie = new Cookies();
+        cookie.remove('KYB_CDN');
+        cookie.remove('KYB_CDN', 'kanyanbao.com', '/');*/
+
+        var ts1;
+        function check_browser() {
+            var ua = navigator.userAgent.toLowerCase();
+            var host = window.location.host;
+            $('#btn_android').hide();
+            $('#btn_zhiqiu_android').hide();
+
+            $('#btn_iphone').hide();
+            $('#btn_zhiqiu_iphone').hide();
+            $('#btn_ipad').hide();
+
+            if (/iphone|ipod|ipad/.test(ua)) {
+                $('#container1').show();
+                if (/micromessenger/.test(ua)) {            //发现是微信的浏览器，则显示提示要求用safari再次打开链接
+
+                }
+                if (/iphone|ipod/.test(ua)) {
+                    if(host.indexOf('kanyanbao')!=-1){
+                        $('#btn_iphone').show();
+                    }else if(host.indexOf('kanzhiqiu')!=-1) {
+                        $('#btn_zhiqiu_iphone').show();
+                    }
+                    /*$('#btn_zhiqiu_iphone').removeClass('btn-primary');
+                    $('#btn_zhiqiu_iphone').addClass('btn-warning');*/
+                } else if (/ipad/.test(ua)) {
+                    if(host.indexOf('kanyanbao')!=-1) {
+                        $('#btn_ipad').show();
+                    }
+                    /*$('#btn_ipad').removeClass('btn-primary');
+                    $('#btn_ipad').addClass('btn-warning');*/
+                }
+            } else if (/android/.test(ua)) {
+                if(host.indexOf('kanyanbao')!=-1){
+                    $('#btn_android').show();
+                }else if(host.indexOf('kanzhiqiu')!=-1) {
+                    $('#btn_zhiqiu_android').show();
+                }
+
+                $('#container1').show();
+                /*$('#btn_zhiqiu_android').removeClass('btn-primary');
+                $('#btn_zhiqiu_android').addClass('btn-warning');*/
+            } else {
+                var report_page = '/newweb/zqsite/#/newreport';
+//                if(host.indexOf('kanyanbao')!=-1){
+//                    //
+//                }else if(host.indexOf('kanzhiqiu')!=-1) {
+//                    report_page = '/newreport/';
+//                }
+
+                $('#container2').show();
+                var p = window.location.protocol;
+                if (p == 'https:' || host.indexOf('sandbox') != -1 || host.indexOf('ww1') != -1) {
+                    setTimeout(function () {
+                        document.location = report_page;
+                    }, 3000);
+                } else {
+                    ts1 = setTimeout(function () {
+                        document.location = 'https://' + host + report_page;
+                    }, 2500);
+                }
+                setTimeout(show_nossl, 3000);
+                setTimeout(add_counter,1000);
+            }
+        }
+        var counter = 0;
+        function add_counter(){
+            $('.check_counter').html(++counter);
+            setTimeout(add_counter,1000);
+        }
+        function show_nossl() {
+            $('#container2 .t-hide').show();
+        }
+    </script>
+</head>
+<body onload="check_browser()">
+<div class="container">
+    <div class="jumbotron">
+        <div class="container t-hide" id="container2">
+            <div class="page-header">
+                <span class="status-text">正在尝试自动进入https连接...<b class="check_counter"></b></span>
+            </div>
+            <p>
+                
+                    
+                    
+                        知丘（推荐）：<a href="https://www.kanzhiqiu.com/user/login.htm">HTTPS访问</a>
+                        &nbsp;
+                        看研报：<a href="https://www.kanyanbao.com/user/login.htm">HTTPS访问</a> |
+                        <a href="http://www.kanyanbao.com/user/login.htm">HTTP访问（将要取消）</a>
+                    
+                
+
+            </p>
+
+            <span class="t-hide" id="nossl">如果长时间无法跳转请确认是否浏览器支持javascript，本网站只支持https方式访问。</span>
+            <p></p>
+            <div class="t-hide light" id="sslnote">
+                为了提高安全性，我们采用ssl加密方式作为缺省访问方式（也就是https协议），此端口是443，如果您发现无法访问https则请联系it管理员开通443端口的访问权限。
+            </div>
+            <p></p>
+            <div class="site_remark">
+                如果无法自动进入，网站访问问题电话：18221339705 | <a href="about.jsp">其他联系方式</a>
+            </div>
+        </div>
+        <div class="container t-hide" id="container1">
+            <small>您正在使用手机浏览器访问看研报，请选择访问方式：</small>
+            <p>
+            <a class="btn btn-primary" role="button"
+               href="/user/login.htm?reset_mobile=DESKTOP">普通网页版</a>
+            </p>
+            
+
+            <div class="app_block">
+                <h2>APP下载</h2>
+
+                
+
+                <p>
+                    <a href="itms-apps://itunes.apple.com/cn/app/kan-yan-bao/id1041282225" id="btn_iphone" class="btn btn-primary" role="button">看研报iPhone
+                        </a>
+                    <a href="itms-apps://itunes.apple.com/cn/app/kan-yan-baohd/id1054303009" id="btn_ipad" class="btn btn-primary" role="button">看研报iPad</a>
+
+                    <a href="https://itunes.apple.com/us/app/%E7%9F%A5%E4%B8%98/id1352853566?l=zh&ls=1&mt=8" id="btn_zhiqiu_iphone" class="btn btn-primary" role="button">知丘iPhone
+                        </a>
+                </p>
+
+                <p>
+                    <a href="http://www.kanyanbao.com/app/android/kanyanbaoAndroid4.apk" id="btn_android" class="btn btn-primary" role="button">看研报Android</a>
+
+                    <a href="https://www.kanyanbao.com/app/android/zhiqiu.apk" id="btn_zhiqiu_android" class="btn btn-primary" role="button">知丘Android</a>
+                </p>
+            </div>
+
+            
+        </div>
+
+        <div class="container footer">
+            101.87.5.171/null	Mozilla/5.0 (Windows NT; Windows NT 10.0; zh-CN) WindowsPowerShell/5.1.26100.7920<br/>
+
+
+        </div>
+        <p><br/></p>
+        <center><a href="https://beian.miit.gov.cn">沪ICP备11012643号-14</a> <a href="https://beian.miit.gov.cn">沪ICP备11012643号-23</a></center>
+    </div>
+</div>
+</body>
+</html>

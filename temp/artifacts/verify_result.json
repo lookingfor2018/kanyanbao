@@ -1,0 +1,60 @@
+{
+  "startedAt": "2026-03-24T13:12:06.692Z",
+  "loginUrl": "https://www.kanzhiqiu.com/user/login.htm",
+  "reportHomeUrl": "https://www.kanzhiqiu.com/newreport/reportHome.htm",
+  "loginCheckResponse": {
+    "message": "买方用户mobile方式登录成功",
+    "login": {
+      "lastLogin": {
+        "city": "中国上海上海市 ",
+        "total": 0,
+        "ips": 0,
+        "userId": 0,
+        "appId": 0,
+        "loginTime": 1774357877000,
+        "remoteIp": "101.87.5.171"
+      },
+      "historyLogin": [
+        {
+          "city": "中国上海上海市 ",
+          "total": 7,
+          "ips": 1,
+          "userId": 0,
+          "appId": 0,
+          "loginTime": 1774357877000,
+          "remoteIp": "101.87.5.171"
+        },
+        {
+          "city": "上海市",
+          "total": 1,
+          "ips": 1,
+          "userId": 0,
+          "appId": 0,
+          "loginTime": 1773712139000,
+          "remoteIp": "116.228.132.147"
+        }
+      ]
+    },
+    "status": 1
+  },
+  "toLoginResponse": {
+    "parseError": "Error: response.json: Protocol error (Network.getResponseBody): No resource with given identifier found",
+    "status": 200,
+    "url": "https://www.kanzhiqiu.com/user/toLogin.json",
+    "text": ""
+  },
+  "finalUrl": "https://www.kanzhiqiu.com/newweb/zqsite/#/newreport",
+  "pageTitle": "知丘智能资讯平台-首页",
+  "reportPageTitle": "知丘智能资讯平台-研究报告精简版-全部报告",
+  "reportPageUrl": "https://www.kanzhiqiu.com/newreport/reportHome.htm",
+  "loginSuccessLikely": true,
+  "download": {
+    "attempted": true,
+    "success": true,
+    "detail": "downloaded first report from https://www.kanzhiqiu.com/imageserver/report/download.htm?id=42970939",
+    "filePath": "d:\\vscode\\kanyanbao\\temp\\downloads\\report_42970939.pdf",
+    "candidateLinksFound": 15
+  },
+  "errors": [],
+  "finishedAt": "2026-03-24T13:12:22.949Z"
+}
