@@ -1,6 +1,6 @@
 [
   {
-    "run_id": "kanyanbao-2026-03-25-152312",
+    "run_id": "kanyanbao-2026-03-25-233236",
     "source_report_id": "42970939",
     "ticker": "SE",
     "name": "Sea",
@@ -8,47 +8,47 @@
     "raw_pdf_path": "runtime/raw_reports/2026-03-25/2026-03-25_SE_42970939_raw.pdf",
     "sanitized_pdf_path": "runtime/sanitized_reports/2026-03-25/2026-03-25_SE_42970939_sanitized.pdf",
     "page_count": 22,
-    "file_sha256": "5f6044eafa90491e7726d5bc1c807b24032800ebf116723a7df82302f3f7c0b6",
+    "file_sha256": "0c267562c103038afded280053fbece6eabf20e97457062213428fc3b50acc93",
     "watermark_hits": [
       {
         "page": 1,
         "rule_id": "literal",
-        "text": "���������"
+        "text": "本报告仅供"
       },
       {
         "page": 1,
         "rule_id": "literal",
-        "text": "�Ѽ�¼��־������"
+        "text": "已记录日志请勿传阅"
       },
       {
         "page": 1,
         "rule_id": "literal_search",
-        "text": "���������"
+        "text": "本报告仅供"
       },
       {
         "page": 1,
         "rule_id": "literal_search",
-        "text": "�Ѽ�¼��־������"
+        "text": "已记录日志请勿传阅"
       },
       {
         "page": 20,
         "rule_id": "literal",
-        "text": "���������"
+        "text": "本报告仅供"
       },
       {
         "page": 20,
         "rule_id": "literal_search",
-        "text": "���������"
+        "text": "本报告仅供"
       },
       {
         "page": 21,
         "rule_id": "literal",
-        "text": "���������"
+        "text": "本报告仅供"
       },
       {
         "page": 21,
         "rule_id": "literal_search",
-        "text": "���������"
+        "text": "本报告仅供"
       }
     ],
     "sanitization_status": "completed",

@@ -1,10 +1,10 @@
 # Kanyanbao 验收报告 | 2026-03-25
 
-run_id: kanyanbao-2026-03-25-152312
+run_id: kanyanbao-2026-03-25-233236
 mode: manual
 timezone: Asia/Shanghai
-delivery_status: ready
-自动推送结论: 可自动推送
+delivery_status: blocked
+自动推送结论: 阻断
 
 ## 8 个核心场景结果
 
@@ -13,17 +13,18 @@ delivery_status: ready
 3. 板块归类与排序：PASS - section 字段完整性检查
 4. 脱敏有效性：PASS - 仅 completed 才可自动放行
 5. 翻译与总结：PASS - 每篇 6 条摘要检查
-6. 对象存储/签名/短链：PASS - link_status=shortened 检查
-7. 链接异常处理：PASS - failed/expired 状态检查
+6. 对象存储/签名/短链：FAIL - link_status=shortened 检查
+7. 链接异常处理：FAIL - failed/expired 状态检查
 8. 飞书文本与卡片：PASS - feishu_cards 结构检查
 
 ## 阻断原因
 
-- 无
+- delivery_status=blocked
+- 存在未就绪短链接
 
 ## 人工复核项
 
-- 无
+- summary review required: SE 42970939
 
 ## 恢复建议
 
