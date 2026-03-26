@@ -1,6 +1,6 @@
 [
   {
-    "run_id": "kanyanbao-2026-03-26-194408",
+    "run_id": "kanyanbao-2026-03-26-200004",
     "no": 1,
     "section": "消费",
     "name": "Sea",
@@ -21,12 +21,12 @@
     ],
     "source_report_id": "42983629",
     "sanitized_pdf_path": "runtime/sanitized_reports/2026-03-26/2026-03-26_SE_42983629_sanitized.pdf",
-    "short_link": "SHORT_LINK_PLACEHOLDER",
+    "short_link": "https://lookingfor2018.github.io/kanyanbao/r/YtYs7GLu/",
     "summary_status": "completed",
-    "review_required": true,
+    "review_required": false,
     "error": null,
-    "link_status": "failed",
-    "signed_url": "",
-    "storage_object_key": ""
+    "link_status": "shortened",
+    "signed_url": "https://01753997ca8117ee51fa68250692a9d9.r2.cloudflarestorage.com/kanyanbao-reports/reports/2026-03-26/a9de15637dacd0e5414bd747158760ad.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=2f1846599b1dbac611716d8b9a886723%2F20260326%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260326T120057Z&X-Amz-Expires=604800&X-Amz-Signature=3a1a7bb14698c14e045780b156afb2b74cd98909d816fad3390399ba427be643&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "storage_object_key": "reports/2026-03-26/a9de15637dacd0e5414bd747158760ad.pdf"
   }
 ]
