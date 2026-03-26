@@ -1,0 +1,8 @@
+[
+  {
+    "stage": "acquisition",
+    "reason": "Ticker match is ambiguous or outside run window; blocked for manual review",
+    "ticker": "SE",
+    "source_report_id": "42970939"
+  }
+]
