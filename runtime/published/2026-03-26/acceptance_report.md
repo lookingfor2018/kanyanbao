@@ -1,6 +1,6 @@
 # Kanyanbao 验收报告 | 2026-03-26
 
-run_id: kanyanbao-2026-03-26-193206
+run_id: kanyanbao-2026-03-26-193831
 mode: manual
 timezone: Asia/Shanghai
 delivery_status: blocked
@@ -28,4 +28,12 @@ delivery_status: blocked
 
 ## 恢复建议
 
-- Live acquisition probe failed: exit=1: N/A 
+- Live acquisition probe failed: exit=1: Error: browserType.launch: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium_headless_shell-1208/chrome-headless-shell-linux64/chrome-headless-shell
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝: N/A 
