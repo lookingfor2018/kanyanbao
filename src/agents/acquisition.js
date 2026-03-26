@@ -9,6 +9,8 @@ const { extractPdfText } = require("../sanitize/extract-pdf-text");
 
 function runLiveAcquisitionProbe({ rootDir, logger }) {
   const scriptPath = path.join(rootDir, "temp", "verify_kanzhiqiu_login_download.cjs");
+  const verifyResultPath = path.join(rootDir, "temp", "artifacts", "verify_result.json");
+  const verifyFatalPath = path.join(rootDir, "temp", "artifacts", "verify_result_fatal.json");
   if (!fs.existsSync(scriptPath)) {
     logger.warn("acquisition", "Live acquisition script not found, fallback to local sample");
     return { ok: false, message: "missing live script", downloadedFilePath: "" };
@@ -24,13 +26,23 @@ function runLiveAcquisitionProbe({ rootDir, logger }) {
     return { ok: false, message: String(result.error), downloadedFilePath: "" };
   }
   if (result.status !== 0) {
+    const verifyResult = readJsonIfExists(verifyResultPath, {});
+    const verifyFatal = readJsonIfExists(verifyFatalPath, {});
+    const detailCandidates = [
+      Array.isArray(verifyResult.errors) ? verifyResult.errors[0] : "",
+      verifyResult.download && verifyResult.download.detail ? verifyResult.download.detail : "",
+      verifyFatal && verifyFatal.fatal ? verifyFatal.fatal : "",
+      String(result.stderr || "").trim(),
+    ]
+      .map((item) => String(item || "").trim())
+      .filter(Boolean);
+    const detail = detailCandidates[0] || "no detail";
     logger.warn(
       "acquisition",
-      `Live acquisition probe exited with code ${result.status}; stderr=${String(result.stderr || "").slice(0, 300)}`
+      `Live acquisition probe exited with code ${result.status}; detail=${detail}`
     );
-    return { ok: false, message: `exit=${result.status}`, downloadedFilePath: "" };
+    return { ok: false, message: `exit=${result.status}: ${detail}`, downloadedFilePath: "" };
   }
-  const verifyResultPath = path.join(rootDir, "temp", "artifacts", "verify_result.json");
   const verifyResult = readJsonIfExists(verifyResultPath, {});
   const downloadedFilePath =
     verifyResult && verifyResult.download && verifyResult.download.success && verifyResult.download.filePath
