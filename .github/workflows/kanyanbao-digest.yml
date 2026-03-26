@@ -69,7 +69,7 @@ jobs:
       VERIFY_SIGNED_URL: "true"
       VERIFY_SHORTLINK: "true"
       LINK_VERIFY_TIMEOUT_MS: "20000"
-      ENABLE_LIVE_ACQUISITION: ${{ vars.ENABLE_LIVE_ACQUISITION || 'false' }}
+      ENABLE_LIVE_ACQUISITION: ${{ vars.ENABLE_LIVE_ACQUISITION || 'true' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -93,6 +93,16 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Check acquisition env
+        shell: bash
+        run: |
+          echo "ENABLE_LIVE_ACQUISITION=${ENABLE_LIVE_ACQUISITION}"
+          if [ -n "${KZQ_USERNAME}" ] && [ -n "${KZQ_PASSWORD}" ]; then
+            echo "KZQ credentials: present"
+          else
+            echo "KZQ credentials: missing"
+          fi
 
       - name: Run orchestrator
         shell: bash
