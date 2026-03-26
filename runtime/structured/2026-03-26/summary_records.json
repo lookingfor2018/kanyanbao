@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "run_id": "kanyanbao-2026-03-26-194408",
+    "no": 1,
+    "section": "消费",
+    "name": "Sea",
+    "ticker": "SE",
+    "security": "Sea",
+    "rating": "N/A",
+    "pt": "N/A",
+    "broker": "N/A",
+    "upload_at": "2026-03-25T22:40:00+08:00",
+    "is_new": true,
+    "summary_bullets": [
+      "核心结论：未提及",
+      "评级/目标价：未提及",
+      "驱动因素：未提及",
+      "财务预测：未提及",
+      "风险点：未提及",
+      "重要数字：未提及"
+    ],
+    "source_report_id": "42983629",
+    "sanitized_pdf_path": "runtime/sanitized_reports/2026-03-26/2026-03-26_SE_42983629_sanitized.pdf",
+    "short_link": "SHORT_LINK_PLACEHOLDER",
+    "summary_status": "completed",
+    "review_required": true,
+    "error": null,
+    "link_status": "failed",
+    "signed_url": "",
+    "storage_object_key": ""
+  }
+]
