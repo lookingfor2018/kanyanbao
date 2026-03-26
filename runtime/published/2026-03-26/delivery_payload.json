@@ -10,6 +10,8 @@
       ]
     }
   ],
-  "delivery_status": "ready",
-  "warnings": []
+  "delivery_status": "failed",
+  "warnings": [
+    "token failed: status=200, body={\"code\":10003,\"data\":{},\"msg\":\"invalid param\"}"
+  ]
 }
