@@ -1,10 +1,38 @@
 const fs = require("fs");
 const path = require("path");
+const { spawnSync } = require("child_process");
 const { createStandardError } = require("../config/contracts");
 const { listFilesWithExt, readJsonIfExists, safeCopyFile, sha256File } = require("../shared/fs-utils");
 const { formatIsoCst, fromCnDateTime, isWithinNaturalDays } = require("../shared/time");
 const { runPythonRedaction } = require("../sanitize/redact-pdf");
 const { extractPdfText } = require("../sanitize/extract-pdf-text");
+
+function runLiveAcquisitionProbe({ rootDir, logger }) {
+  const scriptPath = path.join(rootDir, "temp", "verify_kanzhiqiu_login_download.cjs");
+  if (!fs.existsSync(scriptPath)) {
+    logger.warn("acquisition", "Live acquisition script not found, fallback to local sample");
+    return { ok: false, message: "missing live script" };
+  }
+  const result = spawnSync("node", [scriptPath], {
+    cwd: rootDir,
+    encoding: "utf8",
+    timeout: 180000,
+    maxBuffer: 20 * 1024 * 1024,
+  });
+  if (result.error) {
+    logger.warn("acquisition", `Live acquisition probe failed: ${String(result.error)}`);
+    return { ok: false, message: String(result.error) };
+  }
+  if (result.status !== 0) {
+    logger.warn(
+      "acquisition",
+      `Live acquisition probe exited with code ${result.status}; stderr=${String(result.stderr || "").slice(0, 300)}`
+    );
+    return { ok: false, message: `exit=${result.status}` };
+  }
+  logger.info("acquisition", "Live acquisition probe completed");
+  return { ok: true, message: "completed" };
+}
 
 function parseReportId(filePath) {
   const base = path.basename(filePath);
@@ -134,6 +162,11 @@ async function runAcquisition({
   const warnings = [];
 
   const securityByTicker = new Map(securityRecords.map((item) => [item.ticker, item]));
+
+  if (env.feature.enableLiveAcquisition) {
+    runLiveAcquisitionProbe({ rootDir, logger });
+  }
+
   const reportHomePath = path.join(rootDir, "temp", "artifacts", "report_home.html");
   const reportHomeHtml = fs.existsSync(reportHomePath) ? fs.readFileSync(reportHomePath, "utf8") : "";
 

@@ -42,6 +42,8 @@ jobs:
     env:
       RUN_TIMEZONE: Asia/Shanghai
       DEFAULT_RUN_MODE: scheduled
+      KZQ_USERNAME: ${{ secrets.KZQ_USERNAME }}
+      KZQ_PASSWORD: ${{ secrets.KZQ_PASSWORD }}
       SUMMARY_API_BASE_URL: ${{ vars.SUMMARY_API_BASE_URL || 'https://gmn.chuangzuoli.com' }}
       SUMMARY_API_KEY: ${{ secrets.SUMMARY_API_KEY }}
       SUMMARY_MODEL: ${{ vars.SUMMARY_MODEL || 'gpt-5.3' }}
@@ -67,7 +69,7 @@ jobs:
       VERIFY_SIGNED_URL: "true"
       VERIFY_SHORTLINK: "true"
       LINK_VERIFY_TIMEOUT_MS: "20000"
-      ENABLE_LIVE_ACQUISITION: "false"
+      ENABLE_LIVE_ACQUISITION: ${{ vars.ENABLE_LIVE_ACQUISITION || 'false' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v5
