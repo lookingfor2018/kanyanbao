@@ -4,4 +4,8 @@ node_modules/
 # Runtime files that should not be committed
 runtime/raw_reports/
 runtime/sanitized_reports/
+runtime/logs/
 
+# Temporary local artifacts
+temp/artifacts/
+temp/downloads/

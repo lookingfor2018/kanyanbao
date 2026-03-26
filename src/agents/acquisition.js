@@ -11,7 +11,7 @@ function runLiveAcquisitionProbe({ rootDir, logger }) {
   const scriptPath = path.join(rootDir, "temp", "verify_kanzhiqiu_login_download.cjs");
   if (!fs.existsSync(scriptPath)) {
     logger.warn("acquisition", "Live acquisition script not found, fallback to local sample");
-    return { ok: false, message: "missing live script" };
+    return { ok: false, message: "missing live script", downloadedFilePath: "" };
   }
   const result = spawnSync("node", [scriptPath], {
     cwd: rootDir,
@@ -21,17 +21,23 @@ function runLiveAcquisitionProbe({ rootDir, logger }) {
   });
   if (result.error) {
     logger.warn("acquisition", `Live acquisition probe failed: ${String(result.error)}`);
-    return { ok: false, message: String(result.error) };
+    return { ok: false, message: String(result.error), downloadedFilePath: "" };
   }
   if (result.status !== 0) {
     logger.warn(
       "acquisition",
       `Live acquisition probe exited with code ${result.status}; stderr=${String(result.stderr || "").slice(0, 300)}`
     );
-    return { ok: false, message: `exit=${result.status}` };
+    return { ok: false, message: `exit=${result.status}`, downloadedFilePath: "" };
   }
+  const verifyResultPath = path.join(rootDir, "temp", "artifacts", "verify_result.json");
+  const verifyResult = readJsonIfExists(verifyResultPath, {});
+  const downloadedFilePath =
+    verifyResult && verifyResult.download && verifyResult.download.success && verifyResult.download.filePath
+      ? String(verifyResult.download.filePath)
+      : "";
   logger.info("acquisition", "Live acquisition probe completed");
-  return { ok: true, message: "completed" };
+  return { ok: true, message: "completed", downloadedFilePath };
 }
 
 function parseReportId(filePath) {
@@ -163,8 +169,9 @@ async function runAcquisition({
 
   const securityByTicker = new Map(securityRecords.map((item) => [item.ticker, item]));
 
+  let liveProbeResult = { ok: false, message: "disabled", downloadedFilePath: "" };
   if (env.feature.enableLiveAcquisition) {
-    runLiveAcquisitionProbe({ rootDir, logger });
+    liveProbeResult = runLiveAcquisitionProbe({ rootDir, logger });
   }
 
   const reportHomePath = path.join(rootDir, "temp", "artifacts", "report_home.html");
@@ -175,11 +182,47 @@ async function runAcquisition({
     ? String(verifyResult.finishedAt).replace("Z", "+00:00")
     : formatIsoCst();
 
-  const localDownloads = listFilesWithExt(path.join(rootDir, "temp", "downloads"), ".pdf").sort((a, b) => {
+  let localDownloads = listFilesWithExt(path.join(rootDir, "temp", "downloads"), ".pdf").sort((a, b) => {
     const aTime = fs.statSync(a).mtimeMs;
     const bTime = fs.statSync(b).mtimeMs;
     return bTime - aTime;
   });
+
+  if (env.feature.enableLiveAcquisition) {
+    if (!liveProbeResult.ok) {
+      const error = createStandardError({
+        code: "LIVE_ACQUISITION_FAILED",
+        stage,
+        message: `Live acquisition probe failed: ${liveProbeResult.message || "unknown error"}`,
+        fatal: false,
+        retryable: true,
+      });
+      errors.push(error);
+      logger.warn(stage, error.message, { errorCode: error.code });
+      return { reportCandidates, sanitizedAssets, errors, warnings };
+    }
+
+    if (liveProbeResult.downloadedFilePath && fs.existsSync(liveProbeResult.downloadedFilePath)) {
+      localDownloads = [liveProbeResult.downloadedFilePath];
+    } else {
+      const freshCutoffMs = Date.now() - 10 * 60 * 1000;
+      const freshDownloads = localDownloads.filter((filePath) => fs.statSync(filePath).mtimeMs >= freshCutoffMs);
+      if (freshDownloads.length > 0) {
+        localDownloads = freshDownloads;
+      } else {
+        const error = createStandardError({
+          code: "LIVE_ACQUISITION_NO_DOWNLOAD",
+          stage,
+          message: "Live acquisition succeeded but no fresh PDF was downloaded",
+          fatal: false,
+          retryable: true,
+        });
+        errors.push(error);
+        logger.warn(stage, error.message, { errorCode: error.code });
+        return { reportCandidates, sanitizedAssets, errors, warnings };
+      }
+    }
+  }
 
   if (localDownloads.length === 0) {
     const error = createStandardError({
