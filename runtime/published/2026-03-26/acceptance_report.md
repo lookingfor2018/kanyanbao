@@ -1,6 +1,6 @@
 # Kanyanbao 验收报告 | 2026-03-26
 
-run_id: kanyanbao-2026-03-26-192218
+run_id: kanyanbao-2026-03-26-193206
 mode: manual
 timezone: Asia/Shanghai
 delivery_status: blocked
@@ -8,7 +8,7 @@ delivery_status: blocked
 
 ## 8 个核心场景结果
 
-1. 登录与下载：PASS - 候选报告数=1
+1. 登录与下载：FAIL - 候选报告数=0
 2. 7 日筛选与新增标记：PASS - upload_at 字段完整性检查
 3. 板块归类与排序：PASS - section 字段完整性检查
 4. 脱敏有效性：PASS - 仅 completed 才可自动放行
@@ -24,8 +24,8 @@ delivery_status: blocked
 
 ## 人工复核项
 
-- Ticker match is ambiguous or outside run window; blocked for manual review: SE 42970939
+- 无
 
 ## 恢复建议
 
-- 无
+- Live acquisition probe failed: exit=1: N/A 

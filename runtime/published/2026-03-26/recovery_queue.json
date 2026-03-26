@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "stage": "acquisition",
+    "reason": "Live acquisition probe failed: exit=1",
+    "ticker": "",
+    "source_report_id": ""
+  }
+]
