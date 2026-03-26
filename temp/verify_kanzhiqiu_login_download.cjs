@@ -35,6 +35,20 @@ function parseFilenameFromContentDisposition(disposition) {
   return "";
 }
 
+function extractReportIdFromHref(href) {
+  if (!href) {
+    return 0;
+  }
+  try {
+    const absolute = new URL(href, REPORT_HOME_URL).toString();
+    const id = new URL(absolute).searchParams.get("id") || "";
+    const parsed = Number.parseInt(id, 10);
+    return Number.isFinite(parsed) ? parsed : 0;
+  } catch (_err) {
+    return 0;
+  }
+}
+
 async function run() {
   const baseDir = __dirname;
   const artifactsDir = path.join(baseDir, "artifacts");
@@ -59,6 +73,8 @@ async function run() {
       detail: "",
       filePath: "",
       candidateLinksFound: 0,
+      selectedHref: "",
+      selectedReportId: 0,
     },
     errors: [],
   };
@@ -149,16 +165,38 @@ async function run() {
           }))
       );
 
-      result.download.candidateLinksFound = candidates.length;
+      const rankedCandidates = candidates
+        .map((item) => ({
+          ...item,
+          reportId: extractReportIdFromHref(item.href),
+        }))
+        .filter((item) => item.href)
+        .sort((a, b) => {
+          if (b.reportId !== a.reportId) {
+            return b.reportId - a.reportId;
+          }
+          return b.href.localeCompare(a.href);
+        });
+
+      result.download.candidateLinksFound = rankedCandidates.length;
       fs.writeFileSync(
         path.join(artifactsDir, "download_candidates.json"),
-        JSON.stringify(candidates, null, 2),
+        JSON.stringify(rankedCandidates, null, 2),
         "utf-8"
       );
 
-      if (candidates.length > 0) {
+      if (rankedCandidates.length > 0) {
         result.download.attempted = true;
-        const absoluteUrl = new URL(candidates[0].href, REPORT_HOME_URL).toString();
+        const selected = rankedCandidates[0];
+        const absoluteUrl = new URL(selected.href, REPORT_HOME_URL).toString();
+        result.download.selectedHref = absoluteUrl;
+        result.download.selectedReportId = selected.reportId;
+
+        for (const fileName of fs.readdirSync(downloadsDir)) {
+          if (fileName.toLowerCase().endsWith(".pdf")) {
+            fs.rmSync(path.join(downloadsDir, fileName), { force: true });
+          }
+        }
 
         const response = await context.request.get(absoluteUrl, {
           timeout: 60000,
@@ -184,7 +222,7 @@ async function run() {
           fs.writeFileSync(savePath, body);
           result.download.success = true;
           result.download.filePath = savePath;
-          result.download.detail = `downloaded first report from ${absoluteUrl}`;
+          result.download.detail = `downloaded report (max id=${selected.reportId}) from ${absoluteUrl}`;
         } else {
           const debugPath = path.join(downloadsDir, `download_debug_${Date.now()}.txt`);
           fs.writeFileSync(debugPath, body);
