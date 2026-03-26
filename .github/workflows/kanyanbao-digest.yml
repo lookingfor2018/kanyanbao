@@ -214,6 +214,15 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Check Feishu auth env
+        shell: bash
+        run: |
+          echo "FEISHU_APP_ID length: ${#FEISHU_APP_ID}"
+          echo "FEISHU_APP_SECRET length: ${#FEISHU_APP_SECRET}"
+          if [ -n "${FEISHU_APP_ID}" ]; then
+            echo "FEISHU_APP_ID prefix: ${FEISHU_APP_ID:0:6}"
+          fi
+
       - name: Notify latest batch in Feishu
         shell: bash
         run: |
