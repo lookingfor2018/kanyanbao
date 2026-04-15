@@ -1,14 +1,14 @@
 [
   {
-    "run_id": "kanyanbao-2026-04-15-114541",
-    "source_report_id": "43025004",
-    "ticker": "U",
-    "name": "Unity",
-    "section": "科技",
-    "raw_pdf_path": "runtime/raw_reports/2026-04-15/2026-04-15_U_43025004_raw.pdf",
-    "sanitized_pdf_path": "runtime/sanitized_reports/2026-04-15/2026-04-15_U_43025004_sanitized.pdf",
-    "page_count": 19,
-    "file_sha256": "7cc1b0047e6e431ffac8c27071e8dd3c2b6cb7f0fb743dfa12c3477ca7b16022",
+    "run_id": "kanyanbao-2026-04-15-153336",
+    "source_report_id": "43027624",
+    "ticker": "SE",
+    "name": "Sea",
+    "section": "消费",
+    "raw_pdf_path": "runtime/raw_reports/2026-04-15/2026-04-15_SE_43027624_raw.pdf",
+    "sanitized_pdf_path": "runtime/sanitized_reports/2026-04-15/2026-04-15_SE_43027624_sanitized.pdf",
+    "page_count": 8,
+    "file_sha256": "73cfc646f446f14b152a0180bbd1eda022a237482ad31454c963d0cd9f0dca0b",
     "watermark_hits": [
       {
         "page": 1,
@@ -29,32 +29,12 @@
         "page": 1,
         "rule_id": "literal_search",
         "text": "已记录日志请勿传阅"
-      },
-      {
-        "page": 17,
-        "rule_id": "literal",
-        "text": "本报告仅供"
-      },
-      {
-        "page": 17,
-        "rule_id": "literal_search",
-        "text": "本报告仅供"
-      },
-      {
-        "page": 18,
-        "rule_id": "literal",
-        "text": "本报告仅供"
-      },
-      {
-        "page": 18,
-        "rule_id": "literal_search",
-        "text": "本报告仅供"
       }
     ],
     "sanitization_status": "completed",
     "ready_for_summary": true,
     "broker": "N/A",
-    "upload_at": "2026-04-14T07:43:00+08:00",
+    "upload_at": "2026-04-15T10:19:00+08:00",
     "is_new": true,
     "error": null
   }
