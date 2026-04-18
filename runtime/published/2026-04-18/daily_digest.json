@@ -1,0 +1,17 @@
+{
+  "run_date": "2026-04-18",
+  "timezone": "Asia/Shanghai",
+  "total_reports": 1,
+  "new_reports": 1,
+  "sections": [
+    {
+      "section": "科技",
+      "count": 1,
+      "items": [
+        "43032780"
+      ]
+    }
+  ],
+  "markdown_path": "runtime/published/2026-04-18/daily_digest.md",
+  "generated_at": "2026-04-18T11:35:10+08:00"
+}
