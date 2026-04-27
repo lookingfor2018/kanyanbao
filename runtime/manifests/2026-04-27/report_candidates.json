@@ -1,0 +1,20 @@
+[
+  {
+    "run_id": "kanyanbao-2026-04-27-120441",
+    "source": "kanzhiqiu",
+    "source_report_id": "43055525",
+    "title": "Report 43055525",
+    "broker": "N/A",
+    "ticker": "SE",
+    "name": "Sea",
+    "section": "消费",
+    "upload_at": "2026-04-27T07:46:00+08:00",
+    "is_new": true,
+    "matched_by": "alias_match",
+    "page_url": "https://www.kanzhiqiu.com/newreport/reportHome.htm",
+    "download_url": "https://www.kanzhiqiu.com/imageserver/report/download.htm?id=43055525",
+    "raw_pdf_path": "runtime/raw_reports/2026-04-27/2026-04-27_SE_43055525_raw.pdf",
+    "acquisition_status": "completed",
+    "error": null
+  }
+]
