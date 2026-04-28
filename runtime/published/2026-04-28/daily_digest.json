@@ -5,7 +5,7 @@
   "new_reports": 1,
   "sections": [
     {
-      "section": "消费",
+      "section": "科技",
       "count": 1,
       "items": [
         "43059048"
@@ -13,5 +13,5 @@
     }
   ],
   "markdown_path": "runtime/published/2026-04-28/daily_digest.md",
-  "generated_at": "2026-04-28T12:11:50+08:00"
+  "generated_at": "2026-04-28T15:44:18+08:00"
 }
