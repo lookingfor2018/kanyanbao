@@ -1,0 +1,17 @@
+{
+  "run_date": "2026-04-30",
+  "timezone": "Asia/Shanghai",
+  "total_reports": 1,
+  "new_reports": 1,
+  "sections": [
+    {
+      "section": "消费",
+      "count": 1,
+      "items": [
+        "43063305"
+      ]
+    }
+  ],
+  "markdown_path": "runtime/published/2026-04-30/daily_digest.md",
+  "generated_at": "2026-04-30T12:10:53+08:00"
+}
