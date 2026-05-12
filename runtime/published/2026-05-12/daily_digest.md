@@ -1,6 +1,6 @@
 # Kanyanbao 美股研报日报 | 2026-05-12
 
-更新时间：2026-05-12 12:13:07 CST
+更新时间：2026-05-12 16:07:58 CST
 覆盖范围：最近 7 个自然日
 新增标记：最近 2 个自然日上传的报告显示为【新增】
 总报告数：1
@@ -13,7 +13,7 @@
 
 ## 消费
 
-1. 【新增】Sea - SE | N/A | PT N/A | [报告链接](https://lookingfor2018.github.io/kanyanbao/r/C31JXm9m/)
+1. 【新增】Sea - SE | N/A | PT N/A | [报告链接](https://lookingfor2018.github.io/kanyanbao/r/BLTtr6Pq/)
    - 核心结论：未提及
    - 评级/目标价：未提及
    - 驱动因素：未提及
