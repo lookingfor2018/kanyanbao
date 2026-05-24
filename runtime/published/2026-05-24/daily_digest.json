@@ -1,9 +1,17 @@
 {
   "run_date": "2026-05-24",
   "timezone": "Asia/Shanghai",
-  "total_reports": 0,
+  "total_reports": 1,
   "new_reports": 0,
-  "sections": [],
+  "sections": [
+    {
+      "section": "消费",
+      "count": 1,
+      "items": [
+        "43118185"
+      ]
+    }
+  ],
   "markdown_path": "runtime/published/2026-05-24/daily_digest.md",
-  "generated_at": "2026-05-24T12:47:27+08:00"
+  "generated_at": "2026-05-24T16:03:36+08:00"
 }
