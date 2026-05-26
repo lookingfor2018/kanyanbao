@@ -784,6 +784,13 @@
       "target_url": "https://01753997ca8117ee51fa68250692a9d9.r2.cloudflarestorage.com/kanyanbao-reports/reports/2026-05-26/c24d59971c7a8132a62fe38af79ee824.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=2f1846599b1dbac611716d8b9a886723%2F20260526%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260526T044120Z&X-Amz-Expires=604800&X-Amz-Signature=f6b1913be5bc88a0d2b52b5c18e81c03a730715ed533273ea5813c140808ebb4&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
       "ticker": "SE",
       "source_report_id": "43122984"
+    },
+    {
+      "code": "MWcu2N22",
+      "short_url": "https://lookingfor2018.github.io/kanyanbao/r/MWcu2N22/",
+      "target_url": "https://01753997ca8117ee51fa68250692a9d9.r2.cloudflarestorage.com/kanyanbao-reports/reports/2026-05-26/1600cb9b3ca21737fad066277d9cb087.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=2f1846599b1dbac611716d8b9a886723%2F20260526%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260526T084839Z&X-Amz-Expires=604800&X-Amz-Signature=f147a245a78bad9a6ee50088b719cda8c77c939c2a7d66122ea9dcac45492a0d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "ticker": "SE",
+      "source_report_id": "43122984"
     }
   ]
 }
