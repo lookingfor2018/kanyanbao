@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "run_id": "kanyanbao-2026-06-03-181516",
+    "source": "kanzhiqiu",
+    "source_report_id": "43132797",
+    "title": "Report 43132797",
+    "broker": "N/A",
+    "ticker": "U",
+    "name": "Unity",
+    "section": "科技",
+    "upload_at": "2026-06-03T12:32:00+08:00",
+    "is_new": true,
+    "matched_by": "alias_match",
+    "page_url": "https://www.kanzhiqiu.com/newreport/reportHome.htm",
+    "download_url": "https://www.kanzhiqiu.com/imageserver/report/download.htm?id=43132797",
+    "raw_pdf_path": "runtime/raw_reports/2026-06-03/2026-06-03_U_43132797_raw.pdf",
+    "acquisition_status": "completed",
+    "error": null
+  }
+]

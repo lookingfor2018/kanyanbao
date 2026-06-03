@@ -1,9 +1,17 @@
 {
   "run_date": "2026-06-03",
   "timezone": "Asia/Shanghai",
-  "total_reports": 0,
-  "new_reports": 0,
-  "sections": [],
+  "total_reports": 1,
+  "new_reports": 1,
+  "sections": [
+    {
+      "section": "科技",
+      "count": 1,
+      "items": [
+        "43132797"
+      ]
+    }
+  ],
   "markdown_path": "runtime/published/2026-06-03/daily_digest.md",
-  "generated_at": "2026-06-03T13:23:02+08:00"
+  "generated_at": "2026-06-03T18:15:47+08:00"
 }
