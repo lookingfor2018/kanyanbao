@@ -1,14 +1,14 @@
 [
   {
-    "run_id": "kanyanbao-2026-06-05-125320",
-    "source_report_id": "43134674",
-    "ticker": "SE",
-    "name": "Sea",
-    "section": "消费",
-    "raw_pdf_path": "runtime/raw_reports/2026-06-05/2026-06-05_SE_43134674_raw.pdf",
-    "sanitized_pdf_path": "runtime/sanitized_reports/2026-06-05/2026-06-05_SE_43134674_sanitized.pdf",
-    "page_count": 22,
-    "file_sha256": "2328693c12ae942a6129407b22a8d5f2fd4c8597ff3620e7e4ca34796b06152c",
+    "run_id": "kanyanbao-2026-06-05-165455",
+    "source_report_id": "43134805",
+    "ticker": "U",
+    "name": "Unity",
+    "section": "科技",
+    "raw_pdf_path": "runtime/raw_reports/2026-06-05/2026-06-05_U_43134805_raw.pdf",
+    "sanitized_pdf_path": "runtime/sanitized_reports/2026-06-05/2026-06-05_U_43134805_sanitized.pdf",
+    "page_count": 20,
+    "file_sha256": "877ca28bd5b0983c44d506cde598ef787ea8032aebb16856422c7f5bd9d490c5",
     "watermark_hits": [
       {
         "page": 1,
@@ -34,7 +34,7 @@
     "sanitization_status": "completed",
     "ready_for_summary": true,
     "broker": "N/A",
-    "upload_at": "2026-06-05T07:37:00+08:00",
+    "upload_at": "2026-06-05T09:25:00+08:00",
     "is_new": true,
     "error": null
   }
