@@ -1,15 +1,15 @@
 [
   {
-    "run_id": "kanyanbao-2026-06-08-131004",
+    "run_id": "kanyanbao-2026-06-08-175933",
     "no": 1,
-    "section": "消费",
-    "name": "Sea",
-    "ticker": "SE",
-    "security": "Sea",
+    "section": "科技",
+    "name": "Unity",
+    "ticker": "U",
+    "security": "Unity",
     "rating": "N/A",
     "pt": "N/A",
     "broker": "N/A",
-    "upload_at": "2026-06-08T09:10:00+08:00",
+    "upload_at": "2026-06-08T02:01:00+08:00",
     "is_new": true,
     "summary_bullets": [
       "核心结论：未提及",
@@ -19,14 +19,14 @@
       "风险点：未提及",
       "重要数字：未提及"
     ],
-    "source_report_id": "43137122",
-    "sanitized_pdf_path": "runtime/sanitized_reports/2026-06-08/2026-06-08_SE_43137122_sanitized.pdf",
-    "short_link": "https://lookingfor2018.github.io/kanyanbao/r/buwjRhkV/",
+    "source_report_id": "43136919",
+    "sanitized_pdf_path": "runtime/sanitized_reports/2026-06-08/2026-06-08_U_43136919_sanitized.pdf",
+    "short_link": "https://lookingfor2018.github.io/kanyanbao/r/3uxM3sTc/",
     "summary_status": "completed",
     "review_required": false,
     "error": null,
     "link_status": "shortened",
-    "signed_url": "https://01753997ca8117ee51fa68250692a9d9.r2.cloudflarestorage.com/kanyanbao-reports/reports/2026-06-08/4cc7ddfd10dacc7a4f6a5161df83fb3f.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=2f1846599b1dbac611716d8b9a886723%2F20260608%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260608T051043Z&X-Amz-Expires=604800&X-Amz-Signature=d58fd18bfc90c35ca7530f00b3c7b010b341f8a41f55b9fa8810a99ecb13ce77&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-    "storage_object_key": "reports/2026-06-08/4cc7ddfd10dacc7a4f6a5161df83fb3f.pdf"
+    "signed_url": "https://01753997ca8117ee51fa68250692a9d9.r2.cloudflarestorage.com/kanyanbao-reports/reports/2026-06-08/81af1e7248c72d6fd60d89066b1cdcdd.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=2f1846599b1dbac611716d8b9a886723%2F20260608%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260608T100014Z&X-Amz-Expires=604800&X-Amz-Signature=d099753ebbaca2ebfda1f17bec24d236758b08a65980f1dbfa96285d976d19df&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "storage_object_key": "reports/2026-06-08/81af1e7248c72d6fd60d89066b1cdcdd.pdf"
   }
 ]
