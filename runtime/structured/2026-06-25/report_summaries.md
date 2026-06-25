@@ -1,6 +1,6 @@
-## 科技
+## 消费
 
-1. 【新增】Unity - U | N/A | PT N/A | [报告链接](SHORT_LINK_PLACEHOLDER)
+1. 【新增】Sea - SE | N/A | PT N/A | [报告链接](SHORT_LINK_PLACEHOLDER)
    - 核心结论：未提及
    - 评级/目标价：未提及
    - 驱动因素：未提及

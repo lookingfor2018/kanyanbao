@@ -1,14 +1,14 @@
 [
   {
-    "run_id": "kanyanbao-2026-06-25-124000",
-    "source_report_id": "43160141",
-    "ticker": "U",
-    "name": "Unity",
-    "section": "科技",
-    "raw_pdf_path": "runtime/raw_reports/2026-06-25/2026-06-25_U_43160141_raw.pdf",
-    "sanitized_pdf_path": "runtime/sanitized_reports/2026-06-25/2026-06-25_U_43160141_sanitized.pdf",
-    "page_count": 9,
-    "file_sha256": "97106a83959790325b1fa80f210d94ecb8225093c8774bee2cab082b4a25a491",
+    "run_id": "kanyanbao-2026-06-25-163400",
+    "source_report_id": "43160133",
+    "ticker": "SE",
+    "name": "Sea",
+    "section": "消费",
+    "raw_pdf_path": "runtime/raw_reports/2026-06-25/2026-06-25_SE_43160133_raw.pdf",
+    "sanitized_pdf_path": "runtime/sanitized_reports/2026-06-25/2026-06-25_SE_43160133_sanitized.pdf",
+    "page_count": 13,
+    "file_sha256": "13b18b6cf15df53dd34810962e2e6342259672698848fc35b7bb28b3d56c0921",
     "watermark_hits": [
       {
         "page": 1,
@@ -31,12 +31,12 @@
         "text": "已记录日志请勿传阅"
       },
       {
-        "page": 9,
+        "page": 13,
         "rule_id": "literal",
         "text": "本报告仅供"
       },
       {
-        "page": 9,
+        "page": 13,
         "rule_id": "literal_search",
         "text": "本报告仅供"
       }
@@ -44,7 +44,7 @@
     "sanitization_status": "completed",
     "ready_for_summary": true,
     "broker": "N/A",
-    "upload_at": "2026-06-25T09:06:00+08:00",
+    "upload_at": "2026-06-25T08:44:00+08:00",
     "is_new": true,
     "error": null
   }
