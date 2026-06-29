@@ -1,6 +1,6 @@
 [
   {
-    "run_id": "kanyanbao-2026-06-29-130802",
+    "run_id": "kanyanbao-2026-06-29-180330",
     "no": 1,
     "section": "科技",
     "name": "Unity",
@@ -21,12 +21,12 @@
     ],
     "source_report_id": "43164256",
     "sanitized_pdf_path": "runtime/sanitized_reports/2026-06-29/2026-06-29_U_43164256_sanitized.pdf",
-    "short_link": "https://lookingfor2018.github.io/kanyanbao/r/5sDAE40N/",
+    "short_link": "https://lookingfor2018.github.io/kanyanbao/r/P6ZOqtge/",
     "summary_status": "completed",
     "review_required": false,
     "error": null,
     "link_status": "shortened",
-    "signed_url": "https://01753997ca8117ee51fa68250692a9d9.r2.cloudflarestorage.com/kanyanbao-reports/reports/2026-06-29/e1aab491c7d36ad7d91a7a1519f07fb5.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=2f1846599b1dbac611716d8b9a886723%2F20260629%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260629T050841Z&X-Amz-Expires=604800&X-Amz-Signature=89810297a91142e657597370c35d77bf24ac1baa189faccc8748c8f0bf8f8797&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-    "storage_object_key": "reports/2026-06-29/e1aab491c7d36ad7d91a7a1519f07fb5.pdf"
+    "signed_url": "https://01753997ca8117ee51fa68250692a9d9.r2.cloudflarestorage.com/kanyanbao-reports/reports/2026-06-29/d11fd1ec48262142c2b20393c7e9a0fd.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=2f1846599b1dbac611716d8b9a886723%2F20260629%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260629T100421Z&X-Amz-Expires=604800&X-Amz-Signature=93a9333e9f977e69403dcaebfa9e591706ce94090bac8c991de0ac00f005b22a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "storage_object_key": "reports/2026-06-29/d11fd1ec48262142c2b20393c7e9a0fd.pdf"
   }
 ]
