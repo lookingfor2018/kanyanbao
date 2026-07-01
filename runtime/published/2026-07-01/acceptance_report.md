@@ -1,6 +1,6 @@
 # Kanyanbao 验收报告 | 2026-07-01
 
-run_id: kanyanbao-2026-07-01-125941
+run_id: kanyanbao-2026-07-01-165757
 mode: scheduled
 timezone: Asia/Shanghai
 delivery_status: ready
