@@ -1,19 +1,19 @@
 [
   {
-    "run_id": "kanyanbao-2026-07-03-121456",
+    "run_id": "kanyanbao-2026-07-03-163147",
     "source": "kanzhiqiu",
     "source_report_id": "43170698",
     "title": "Report 43170698",
     "broker": "N/A",
-    "ticker": "SE",
-    "name": "Sea",
-    "section": "消费",
+    "ticker": "U",
+    "name": "Unity",
+    "section": "科技",
     "upload_at": "2026-07-03T00:50:00+08:00",
     "is_new": true,
     "matched_by": "alias_match",
     "page_url": "https://www.kanzhiqiu.com/newreport/reportHome.htm",
     "download_url": "https://www.kanzhiqiu.com/imageserver/report/download.htm?id=43170698",
-    "raw_pdf_path": "runtime/raw_reports/2026-07-03/2026-07-03_SE_43170698_raw.pdf",
+    "raw_pdf_path": "runtime/raw_reports/2026-07-03/2026-07-03_U_43170698_raw.pdf",
     "acquisition_status": "completed",
     "error": null
   }
