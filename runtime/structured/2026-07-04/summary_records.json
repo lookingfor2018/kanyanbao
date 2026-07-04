@@ -1,0 +1,32 @@
+[
+  {
+    "run_id": "kanyanbao-2026-07-04-120823",
+    "no": 1,
+    "section": "科技",
+    "name": "Unity",
+    "ticker": "U",
+    "security": "Unity",
+    "rating": "N/A",
+    "pt": "N/A",
+    "broker": "N/A",
+    "upload_at": "2026-07-03T00:25:00+08:00",
+    "is_new": true,
+    "summary_bullets": [
+      "核心结论：未提及",
+      "评级/目标价：未提及",
+      "驱动因素：未提及",
+      "财务预测：未提及",
+      "风险点：未提及",
+      "重要数字：未提及"
+    ],
+    "source_report_id": "43170695",
+    "sanitized_pdf_path": "runtime/sanitized_reports/2026-07-04/2026-07-04_U_43170695_sanitized.pdf",
+    "short_link": "https://lookingfor2018.github.io/kanyanbao/r/y9uA3ESk/",
+    "summary_status": "completed",
+    "review_required": false,
+    "error": null,
+    "link_status": "shortened",
+    "signed_url": "https://01753997ca8117ee51fa68250692a9d9.r2.cloudflarestorage.com/kanyanbao-reports/reports/2026-07-04/c0adfb6df6036ec36e41170d39f4fe9b.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=2f1846599b1dbac611716d8b9a886723%2F20260704%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260704T040904Z&X-Amz-Expires=604800&X-Amz-Signature=9f134165dd50504fd77801c8bcd6b01212cc324cf1935a1d1ff7471cb8e7c07d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "storage_object_key": "reports/2026-07-04/c0adfb6df6036ec36e41170d39f4fe9b.pdf"
+  }
+]

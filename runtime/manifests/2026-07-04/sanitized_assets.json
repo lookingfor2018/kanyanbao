@@ -1,0 +1,61 @@
+[
+  {
+    "run_id": "kanyanbao-2026-07-04-120823",
+    "source_report_id": "43170695",
+    "ticker": "U",
+    "name": "Unity",
+    "section": "科技",
+    "raw_pdf_path": "runtime/raw_reports/2026-07-04/2026-07-04_U_43170695_raw.pdf",
+    "sanitized_pdf_path": "runtime/sanitized_reports/2026-07-04/2026-07-04_U_43170695_sanitized.pdf",
+    "page_count": 29,
+    "file_sha256": "bbe139670362f21bb1cb2827c09c324d8ab577037ff405f315be366ed31d85a7",
+    "watermark_hits": [
+      {
+        "page": 1,
+        "rule_id": "literal",
+        "text": "本报告仅供"
+      },
+      {
+        "page": 1,
+        "rule_id": "literal",
+        "text": "已记录日志请勿传阅"
+      },
+      {
+        "page": 1,
+        "rule_id": "literal_search",
+        "text": "本报告仅供"
+      },
+      {
+        "page": 1,
+        "rule_id": "literal_search",
+        "text": "已记录日志请勿传阅"
+      },
+      {
+        "page": 27,
+        "rule_id": "literal",
+        "text": "本报告仅供"
+      },
+      {
+        "page": 27,
+        "rule_id": "literal_search",
+        "text": "本报告仅供"
+      },
+      {
+        "page": 28,
+        "rule_id": "literal",
+        "text": "本报告仅供"
+      },
+      {
+        "page": 28,
+        "rule_id": "literal_search",
+        "text": "本报告仅供"
+      }
+    ],
+    "sanitization_status": "completed",
+    "ready_for_summary": true,
+    "broker": "N/A",
+    "upload_at": "2026-07-03T00:25:00+08:00",
+    "is_new": true,
+    "error": null
+  }
+]
