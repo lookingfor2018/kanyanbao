@@ -1,6 +1,6 @@
 [
   {
-    "run_id": "kanyanbao-2026-07-05-123734",
+    "run_id": "kanyanbao-2026-07-05-162344",
     "source_report_id": "43170695",
     "ticker": "U",
     "name": "Unity",
@@ -8,7 +8,7 @@
     "raw_pdf_path": "runtime/raw_reports/2026-07-05/2026-07-05_U_43170695_raw.pdf",
     "sanitized_pdf_path": "runtime/sanitized_reports/2026-07-05/2026-07-05_U_43170695_sanitized.pdf",
     "page_count": 29,
-    "file_sha256": "8f9d2ba52b6a2c7558d84464af4d8dc8ad97acd21cc5b3c3ac50111954e99bb3",
+    "file_sha256": "b17033bc9e3554dcc448f9d8fd47606c8297e385d2f9ea2464246a3882090199",
     "watermark_hits": [
       {
         "page": 1,
