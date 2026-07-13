@@ -1,6 +1,6 @@
 # Kanyanbao 验收报告 | 2026-07-13
 
-run_id: kanyanbao-2026-07-13-120731
+run_id: kanyanbao-2026-07-13-163013
 mode: scheduled
 timezone: Asia/Shanghai
 delivery_status: blocked
