@@ -1,14 +1,14 @@
 [
   {
-    "run_id": "kanyanbao-2026-07-14-114216",
-    "source_report_id": "43184360",
+    "run_id": "kanyanbao-2026-07-14-152323",
+    "source_report_id": "43184441",
     "ticker": "SE",
     "name": "Sea",
     "section": "消费",
-    "raw_pdf_path": "runtime/raw_reports/2026-07-14/2026-07-14_SE_43184360_raw.pdf",
-    "sanitized_pdf_path": "runtime/sanitized_reports/2026-07-14/2026-07-14_SE_43184360_sanitized.pdf",
-    "page_count": 27,
-    "file_sha256": "9fa5ce882e9694e9bb905aa7d0d9d58c96d125de2e30a7ce588fb2990aaa97ac",
+    "raw_pdf_path": "runtime/raw_reports/2026-07-14/2026-07-14_SE_43184441_raw.pdf",
+    "sanitized_pdf_path": "runtime/sanitized_reports/2026-07-14/2026-07-14_SE_43184441_sanitized.pdf",
+    "page_count": 134,
+    "file_sha256": "0af869aa1fe8128ebb9cbb0d5a1cbcfa4d3120541d5498816abd4542e3e3104b",
     "watermark_hits": [
       {
         "page": 1,
@@ -31,12 +31,22 @@
         "text": "已记录日志请勿传阅"
       },
       {
-        "page": 27,
+        "page": 133,
         "rule_id": "literal",
         "text": "本报告仅供"
       },
       {
-        "page": 27,
+        "page": 133,
+        "rule_id": "literal",
+        "text": "本报告仅供"
+      },
+      {
+        "page": 133,
+        "rule_id": "literal_search",
+        "text": "本报告仅供"
+      },
+      {
+        "page": 133,
         "rule_id": "literal_search",
         "text": "本报告仅供"
       }
@@ -44,7 +54,7 @@
     "sanitization_status": "completed",
     "ready_for_summary": true,
     "broker": "N/A",
-    "upload_at": "2026-07-14T09:25:00+08:00",
+    "upload_at": "2026-07-14T10:16:00+08:00",
     "is_new": true,
     "error": null
   }
