@@ -1,14 +1,14 @@
 [
   {
-    "run_id": "kanyanbao-2026-07-17-114513",
-    "source_report_id": "43188647",
+    "run_id": "kanyanbao-2026-07-17-153136",
+    "source_report_id": "43188622",
     "ticker": "SE",
     "name": "Sea",
     "section": "消费",
-    "raw_pdf_path": "runtime/raw_reports/2026-07-17/2026-07-17_SE_43188647_raw.pdf",
-    "sanitized_pdf_path": "runtime/sanitized_reports/2026-07-17/2026-07-17_SE_43188647_sanitized.pdf",
-    "page_count": 10,
-    "file_sha256": "5ec8aed5d7bfffaa9d72b3f90024f39a9478fe49464109b154708d39bfe917db",
+    "raw_pdf_path": "runtime/raw_reports/2026-07-17/2026-07-17_SE_43188622_raw.pdf",
+    "sanitized_pdf_path": "runtime/sanitized_reports/2026-07-17/2026-07-17_SE_43188622_sanitized.pdf",
+    "page_count": 6,
+    "file_sha256": "061cf42a340df31feb510129eab266be5f9163045690db491bd8ca3b26a1591b",
     "watermark_hits": [
       {
         "page": 1,
@@ -34,7 +34,7 @@
     "sanitization_status": "completed",
     "ready_for_summary": true,
     "broker": "N/A",
-    "upload_at": "2026-07-17T09:54:00+08:00",
+    "upload_at": "2026-07-17T09:32:00+08:00",
     "is_new": true,
     "error": null
   }

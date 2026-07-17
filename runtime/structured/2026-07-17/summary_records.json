@@ -1,6 +1,6 @@
 [
   {
-    "run_id": "kanyanbao-2026-07-17-114513",
+    "run_id": "kanyanbao-2026-07-17-153136",
     "no": 1,
     "section": "消费",
     "name": "Sea",
@@ -9,7 +9,7 @@
     "rating": "N/A",
     "pt": "N/A",
     "broker": "N/A",
-    "upload_at": "2026-07-17T09:54:00+08:00",
+    "upload_at": "2026-07-17T09:32:00+08:00",
     "is_new": true,
     "summary_bullets": [
       "核心结论：未提及",
@@ -19,14 +19,14 @@
       "风险点：未提及",
       "重要数字：未提及"
     ],
-    "source_report_id": "43188647",
-    "sanitized_pdf_path": "runtime/sanitized_reports/2026-07-17/2026-07-17_SE_43188647_sanitized.pdf",
-    "short_link": "https://lookingfor2018.github.io/kanyanbao/r/Q4rPxNTy/",
+    "source_report_id": "43188622",
+    "sanitized_pdf_path": "runtime/sanitized_reports/2026-07-17/2026-07-17_SE_43188622_sanitized.pdf",
+    "short_link": "https://lookingfor2018.github.io/kanyanbao/r/MnsprP8S/",
     "summary_status": "completed",
     "review_required": false,
     "error": null,
     "link_status": "shortened",
-    "signed_url": "https://01753997ca8117ee51fa68250692a9d9.r2.cloudflarestorage.com/kanyanbao-reports/reports/2026-07-17/2ea6879af3e7f45c3a72ddcd199a16fc.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=2f1846599b1dbac611716d8b9a886723%2F20260717%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260717T034548Z&X-Amz-Expires=604800&X-Amz-Signature=e8c04388c5e546751cf7c91e7c5bf9382283f13b4ba4b6902014397443d19a14&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-    "storage_object_key": "reports/2026-07-17/2ea6879af3e7f45c3a72ddcd199a16fc.pdf"
+    "signed_url": "https://01753997ca8117ee51fa68250692a9d9.r2.cloudflarestorage.com/kanyanbao-reports/reports/2026-07-17/9a4d86c9becff5f7cb0e2ea47ddfb36a.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=2f1846599b1dbac611716d8b9a886723%2F20260717%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260717T073214Z&X-Amz-Expires=604800&X-Amz-Signature=fb95dacb5287a4bd1ec6542655e32002a65f0213e36bcbbb595863dec8368f1d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "storage_object_key": "reports/2026-07-17/9a4d86c9becff5f7cb0e2ea47ddfb36a.pdf"
   }
 ]
