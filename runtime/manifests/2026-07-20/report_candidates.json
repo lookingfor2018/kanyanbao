@@ -1,6 +1,6 @@
 [
   {
-    "run_id": "kanyanbao-2026-07-20-121244",
+    "run_id": "kanyanbao-2026-07-20-162123",
     "source": "kanzhiqiu",
     "source_report_id": "43191087",
     "title": "Report 43191087",
@@ -8,7 +8,7 @@
     "ticker": "SE",
     "name": "Sea",
     "section": "消费",
-    "upload_at": "2026-07-20T00:00:00+08:00",
+    "upload_at": "2026-07-20T15:00:00+08:00",
     "is_new": true,
     "matched_by": "alias_match",
     "page_url": "https://www.kanzhiqiu.com/newreport/reportHome.htm",

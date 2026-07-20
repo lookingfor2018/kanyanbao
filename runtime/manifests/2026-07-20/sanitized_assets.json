@@ -1,6 +1,6 @@
 [
   {
-    "run_id": "kanyanbao-2026-07-20-121244",
+    "run_id": "kanyanbao-2026-07-20-162123",
     "source_report_id": "43191087",
     "ticker": "SE",
     "name": "Sea",
@@ -8,7 +8,7 @@
     "raw_pdf_path": "runtime/raw_reports/2026-07-20/2026-07-20_SE_43191087_raw.pdf",
     "sanitized_pdf_path": "runtime/sanitized_reports/2026-07-20/2026-07-20_SE_43191087_sanitized.pdf",
     "page_count": 16,
-    "file_sha256": "05847bc837c047b66a00ed1f6013d9a48db11baa728cc443fb7ca09d846ef894",
+    "file_sha256": "20281f8100c066ae3e89e590bb421387421c9775a82518bf20d7956f823709e9",
     "watermark_hits": [
       {
         "page": 1,
@@ -34,7 +34,7 @@
     "sanitization_status": "completed",
     "ready_for_summary": true,
     "broker": "N/A",
-    "upload_at": "2026-07-20T00:00:00+08:00",
+    "upload_at": "2026-07-20T15:00:00+08:00",
     "is_new": true,
     "error": null
   }
