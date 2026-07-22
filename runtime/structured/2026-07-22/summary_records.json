@@ -1,11 +1,11 @@
 [
   {
-    "run_id": "kanyanbao-2026-07-22-115402",
+    "run_id": "kanyanbao-2026-07-22-154519",
     "no": 1,
-    "section": "消费",
-    "name": "Sea",
-    "ticker": "SE",
-    "security": "Sea",
+    "section": "科技",
+    "name": "Unity",
+    "ticker": "U",
+    "security": "Unity",
     "rating": "N/A",
     "pt": "N/A",
     "broker": "N/A",
@@ -20,13 +20,13 @@
       "重要数字：未提及"
     ],
     "source_report_id": "43195084",
-    "sanitized_pdf_path": "runtime/sanitized_reports/2026-07-22/2026-07-22_SE_43195084_sanitized.pdf",
-    "short_link": "https://lookingfor2018.github.io/kanyanbao/r/mNGwKrBw/",
+    "sanitized_pdf_path": "runtime/sanitized_reports/2026-07-22/2026-07-22_U_43195084_sanitized.pdf",
+    "short_link": "https://lookingfor2018.github.io/kanyanbao/r/CBzFTnTP/",
     "summary_status": "completed",
     "review_required": false,
     "error": null,
     "link_status": "shortened",
-    "signed_url": "https://01753997ca8117ee51fa68250692a9d9.r2.cloudflarestorage.com/kanyanbao-reports/reports/2026-07-22/8535de54f595ef33bb5b1cdb0c3a5386.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=2f1846599b1dbac611716d8b9a886723%2F20260722%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260722T035429Z&X-Amz-Expires=604800&X-Amz-Signature=20b1c68675eaa461a37f42850fc1da72f3af1b801a2f87d9d7655330f2de32dd&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-    "storage_object_key": "reports/2026-07-22/8535de54f595ef33bb5b1cdb0c3a5386.pdf"
+    "signed_url": "https://01753997ca8117ee51fa68250692a9d9.r2.cloudflarestorage.com/kanyanbao-reports/reports/2026-07-22/20b51da7a1115fc3b4866089585b1ff5.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=2f1846599b1dbac611716d8b9a886723%2F20260722%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260722T074554Z&X-Amz-Expires=604800&X-Amz-Signature=823d23b7c1828f866e2f7bec4da271783f68d598b13b476c5b27de05f46952a3&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "storage_object_key": "reports/2026-07-22/20b51da7a1115fc3b4866089585b1ff5.pdf"
   }
 ]

@@ -1,14 +1,14 @@
 [
   {
-    "run_id": "kanyanbao-2026-07-22-115402",
+    "run_id": "kanyanbao-2026-07-22-154519",
     "source_report_id": "43195084",
-    "ticker": "SE",
-    "name": "Sea",
-    "section": "消费",
-    "raw_pdf_path": "runtime/raw_reports/2026-07-22/2026-07-22_SE_43195084_raw.pdf",
-    "sanitized_pdf_path": "runtime/sanitized_reports/2026-07-22/2026-07-22_SE_43195084_sanitized.pdf",
+    "ticker": "U",
+    "name": "Unity",
+    "section": "科技",
+    "raw_pdf_path": "runtime/raw_reports/2026-07-22/2026-07-22_U_43195084_raw.pdf",
+    "sanitized_pdf_path": "runtime/sanitized_reports/2026-07-22/2026-07-22_U_43195084_sanitized.pdf",
     "page_count": 10,
-    "file_sha256": "f2614bffe34cc4d6023fc76651db53d505f05565dc26f5c1287dc1f794588422",
+    "file_sha256": "d4f9b92b03801e4848707d2cc32311a6ec5103b4ea6e21a2f8f6a7e6933755d7",
     "watermark_hits": [
       {
         "page": 1,
