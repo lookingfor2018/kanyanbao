@@ -1,0 +1,51 @@
+[
+  {
+    "run_id": "kanyanbao-2026-08-04-114523",
+    "source_report_id": "43211683",
+    "ticker": "SE",
+    "name": "Sea",
+    "section": "消费",
+    "raw_pdf_path": "runtime/raw_reports/2026-08-04/2026-08-04_SE_43211683_raw.pdf",
+    "sanitized_pdf_path": "runtime/sanitized_reports/2026-08-04/2026-08-04_SE_43211683_sanitized.pdf",
+    "page_count": 31,
+    "file_sha256": "b516241f88c6c4baad4dffd88a74e8b0ad2abdf18dab12bbe01560cf1e78ae88",
+    "watermark_hits": [
+      {
+        "page": 1,
+        "rule_id": "literal",
+        "text": "本报告仅供"
+      },
+      {
+        "page": 1,
+        "rule_id": "literal",
+        "text": "已记录日志请勿传阅"
+      },
+      {
+        "page": 1,
+        "rule_id": "literal_search",
+        "text": "本报告仅供"
+      },
+      {
+        "page": 1,
+        "rule_id": "literal_search",
+        "text": "已记录日志请勿传阅"
+      },
+      {
+        "page": 31,
+        "rule_id": "literal",
+        "text": "本报告仅供"
+      },
+      {
+        "page": 31,
+        "rule_id": "literal_search",
+        "text": "本报告仅供"
+      }
+    ],
+    "sanitization_status": "completed",
+    "ready_for_summary": true,
+    "broker": "N/A",
+    "upload_at": "2026-08-04T09:39:00+08:00",
+    "is_new": true,
+    "error": null
+  }
+]
