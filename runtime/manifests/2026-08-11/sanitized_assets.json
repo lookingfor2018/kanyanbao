@@ -1,11 +1,11 @@
 [
   {
-    "run_id": "kanyanbao-2026-08-11-103329",
-    "source_report_id": "43219965",
-    "ticker": "U",
-    "name": "Unity",
-    "section": "科技",
-    "raw_pdf_path": "runtime/raw_reports/2026-08-11/2026-08-11_U_43219965_raw.pdf",
+    "run_id": "kanyanbao-2026-08-11-141320",
+    "source_report_id": "43220343",
+    "ticker": "SE",
+    "name": "Sea",
+    "section": "消费",
+    "raw_pdf_path": "runtime/raw_reports/2026-08-11/2026-08-11_SE_43220343_raw.pdf",
     "sanitized_pdf_path": "",
     "page_count": 0,
     "file_sha256": "",
@@ -13,12 +13,12 @@
     "sanitization_status": "needs_review",
     "ready_for_summary": false,
     "broker": "N/A",
-    "upload_at": "2026-08-11T01:15:00+08:00",
+    "upload_at": "2026-08-11T09:19:00+08:00",
     "is_new": true,
     "error": {
       "code": "SANITIZE_FAILED",
       "stage": "acquisition",
-      "message": "redaction stdout is not json: warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.\n{\"ok\": true, \"status\": \"completed\", \"page_count\": 106, \"watermark_hits\": [{\"page\": 1, \"rule_id\": \"literal\", \"text\": \"本报告仅供\"}, {\"page\": 1, \"rule_id\": \"literal\", \"text\": \"已记录日志请勿传阅\"}, {\"page\": 1, \"rule_id\": \"literal_search\", \"text\": \"本报告仅供\"}, {\"page\": 1, \"rule_id\": \"literal_search\", \"text\": \"已记录日志请勿传阅\"}], \"redaction_count\": 3, \"output_sha256\": \"93e88ae2ff8596ad7ef5500589c9a4d9711211b66cf859cb82f43061",
+      "message": "redaction stdout is not json: warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.\n{\"ok\": true, \"status\": \"completed\", \"page_count\": 38, \"watermark_hits\": [{\"page\": 1, \"rule_id\": \"literal\", \"text\": \"本报告仅供\"}, {\"page\": 1, \"rule_id\": \"literal\", \"text\": \"已记录日志请勿传阅\"}, {\"page\": 1, \"rule_id\": \"literal_search\", \"text\": \"本报告仅供\"}, {\"page\": 1, \"rule_id\": \"literal_search\", \"text\": \"已记录日志请勿传阅\"}, {\"page\": 38, \"rule_id\": \"literal\", \"text\": \"本报告仅供\"}, {\"page\": 38, \"rule_id\": \"literal_search\", \"te",
       "fatal": false,
       "retryable": true,
       "detail": {
