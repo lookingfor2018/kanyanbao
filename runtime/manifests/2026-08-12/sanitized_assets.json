@@ -1,11 +1,11 @@
 [
   {
-    "run_id": "kanyanbao-2026-08-12-110201",
+    "run_id": "kanyanbao-2026-08-12-145012",
     "source_report_id": "43221807",
-    "ticker": "SE",
-    "name": "Sea",
-    "section": "消费",
-    "raw_pdf_path": "runtime/raw_reports/2026-08-12/2026-08-12_SE_43221807_raw.pdf",
+    "ticker": "U",
+    "name": "Unity",
+    "section": "科技",
+    "raw_pdf_path": "runtime/raw_reports/2026-08-12/2026-08-12_U_43221807_raw.pdf",
     "sanitized_pdf_path": "",
     "page_count": 0,
     "file_sha256": "",
