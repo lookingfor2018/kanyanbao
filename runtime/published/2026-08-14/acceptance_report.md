@@ -1,6 +1,6 @@
 # Kanyanbao 验收报告 | 2026-08-14
 
-run_id: kanyanbao-2026-08-14-110427
+run_id: kanyanbao-2026-08-14-145005
 mode: scheduled
 timezone: Asia/Shanghai
 delivery_status: blocked
@@ -26,7 +26,7 @@ delivery_status: blocked
 ## 人工复核项
 
 - redaction stdout is not json: warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
-{"ok": true, "status": "completed", "page_count": 21, "watermark_hits": [{"page": 1, "rule_id": "literal", "text": "本报告仅供"}, {"page": 1, "rule_id": "literal", "text": "已记录日志请勿传阅"}, {"page": 1, "rule_id": "literal_search", "text": "本报告仅供"}, {"page": 1, "rule_id": "literal_search", "text": "已记录日志请勿传阅"}], "redaction_count": 3, "output_sha256": "2e0b5068ce42ffdf293fcf8c0ed752fe6169d8beb81655c91076dc22e: SE 43225292
+{"ok": true, "status": "completed", "page_count": 21, "watermark_hits": [{"page": 1, "rule_id": "literal", "text": "本报告仅供"}, {"page": 1, "rule_id": "literal", "text": "已记录日志请勿传阅"}, {"page": 1, "rule_id": "literal_search", "text": "本报告仅供"}, {"page": 1, "rule_id": "literal_search", "text": "已记录日志请勿传阅"}], "redaction_count": 3, "output_sha256": "0996bb7b463bf5e1245f939964f2f95ba9dc92f9f2a0f01165dd8ae9e: SE 43225292
 
 ## 恢复建议
 
