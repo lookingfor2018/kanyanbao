@@ -1,6 +1,6 @@
 # Kanyanbao 验收报告 | 2026-08-22
 
-run_id: kanyanbao-2026-08-22-095529
+run_id: kanyanbao-2026-08-22-134954
 mode: scheduled
 timezone: Asia/Shanghai
 delivery_status: blocked
@@ -8,10 +8,10 @@ delivery_status: blocked
 
 ## 8 个核心场景结果
 
-1. 登录与下载：FAIL - 候选报告数=0
+1. 登录与下载：PASS - 候选报告数=1
 2. 7 日筛选与新增标记：PASS - upload_at 字段完整性检查
 3. 板块归类与排序：PASS - section 字段完整性检查
-4. 脱敏有效性：PASS - 仅 completed 才可自动放行
+4. 脱敏有效性：FAIL - 仅 completed 才可自动放行
 5. 翻译与总结：PASS - 每篇 6 条摘要检查
 6. 对象存储/签名/短链：FAIL - link_status=shortened 检查
 7. 链接异常处理：PASS - failed/expired 状态检查
@@ -20,12 +20,14 @@ delivery_status: blocked
 ## 阻断原因
 
 - delivery_status=blocked
+- 存在未完成脱敏报告
 - 存在未就绪短链接
 
 ## 人工复核项
 
-- 无
+- redaction stdout is not json: warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+{"ok": true, "status": "completed", "page_count": 10, "watermark_hits": [{"page": 1, "rule_id": "literal", "text": "本报告仅供"}, {"page": 1, "rule_id": "literal", "text": "已记录日志请勿传阅"}, {"page": 1, "rule_id": "literal_search", "text": "本报告仅供"}, {"page": 1, "rule_id": "literal_search", "text": "已记录日志请勿传阅"}], "redaction_count": 3, "output_sha256": "383270e3f13b9605d2151667041bf6f6a974c13598201a17dca8beadf: SE 43236212
 
 ## 恢复建议
 
-- Live acquisition succeeded but no fresh PDF was downloaded: N/A 
+- 无
