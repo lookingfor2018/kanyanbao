@@ -1,7 +1,7 @@
 [
   {
     "stage": "sanitization",
-    "reason": "redaction stdout is not json: warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.\n{\"ok\": true, \"status\": \"completed\", \"page_count\": 9, \"watermark_hits\": [{\"page\": 1, \"rule_id\": \"literal\", \"text\": \"本报告仅供\"}, {\"page\": 1, \"rule_id\": \"literal\", \"text\": \"已记录日志请勿传阅\"}, {\"page\": 1, \"rule_id\": \"literal_search\", \"text\": \"本报告仅供\"}, {\"page\": 1, \"rule_id\": \"literal_search\", \"text\": \"已记录日志请勿传阅\"}], \"redaction_count\": 3, \"output_sha256\": \"c219bf192201f166eb7b355296cd0f41769b6e04d0954257e30f2afbcf",
+    "reason": "redaction stdout is not json: warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.\n{\"ok\": true, \"status\": \"completed\", \"page_count\": 9, \"watermark_hits\": [{\"page\": 1, \"rule_id\": \"literal\", \"text\": \"本报告仅供\"}, {\"page\": 1, \"rule_id\": \"literal\", \"text\": \"已记录日志请勿传阅\"}, {\"page\": 1, \"rule_id\": \"literal_search\", \"text\": \"本报告仅供\"}, {\"page\": 1, \"rule_id\": \"literal_search\", \"text\": \"已记录日志请勿传阅\"}], \"redaction_count\": 3, \"output_sha256\": \"6790136355341355b7a922614be2f6cc23fca50d16ede581ffd8ce65ee",
     "ticker": "SE",
     "source_report_id": "43239226"
   }
