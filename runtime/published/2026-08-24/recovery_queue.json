@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "stage": "acquisition",
+    "reason": "Live acquisition probe failed: Error: spawnSync node ETIMEDOUT",
+    "ticker": "",
+    "source_report_id": ""
+  }
+]
