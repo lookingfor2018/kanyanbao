@@ -1,0 +1,29 @@
+[
+  {
+    "run_id": "kanyanbao-2026-09-01-132310",
+    "source_report_id": "43266864",
+    "ticker": "SE",
+    "name": "Sea",
+    "section": "消费",
+    "raw_pdf_path": "runtime/raw_reports/2026-09-01/2026-09-01_SE_43266864_raw.pdf",
+    "sanitized_pdf_path": "",
+    "page_count": 0,
+    "file_sha256": "",
+    "watermark_hits": [],
+    "sanitization_status": "needs_review",
+    "ready_for_summary": false,
+    "broker": "N/A",
+    "upload_at": "2026-09-01T08:00:00+08:00",
+    "is_new": true,
+    "error": {
+      "code": "SANITIZE_FAILED",
+      "stage": "acquisition",
+      "message": "redaction stdout is not json: warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.\n{\"ok\": true, \"status\": \"completed\", \"page_count\": 35, \"watermark_hits\": [{\"page\": 1, \"rule_id\": \"literal\", \"text\": \"本报告仅供\"}, {\"page\": 1, \"rule_id\": \"literal\", \"text\": \"已记录日志请勿传阅\"}, {\"page\": 1, \"rule_id\": \"literal_search\", \"text\": \"本报告仅供\"}, {\"page\": 1, \"rule_id\": \"literal_search\", \"text\": \"已记录日志请勿传阅\"}, {\"page\": 34, \"rule_id\": \"literal\", \"text\": \"本报告仅供\"}, {\"page\": 34, \"rule_id\": \"literal_search\", \"te",
+      "fatal": false,
+      "retryable": true,
+      "detail": {
+        "stderr": ""
+      }
+    }
+  }
+]
