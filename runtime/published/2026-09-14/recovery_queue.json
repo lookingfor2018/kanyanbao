@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "stage": "acquisition",
+    "reason": "Live acquisition succeeded but no fresh PDF was downloaded",
+    "ticker": "",
+    "source_report_id": ""
+  }
+]
