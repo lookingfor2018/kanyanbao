@@ -1,6 +1,6 @@
 [
   {
-    "run_id": "kanyanbao-2026-09-27-132934",
+    "run_id": "kanyanbao-2026-09-27-184027",
     "source_report_id": "43304771",
     "ticker": "SE",
     "name": "Sea",
@@ -18,7 +18,7 @@
     "error": {
       "code": "SANITIZE_FAILED",
       "stage": "acquisition",
-      "message": "redaction stdout is not json: warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.\n{\"ok\": true, \"status\": \"completed\", \"page_count\": 22, \"watermark_hits\": [{\"page\": 1, \"rule_id\": \"literal\", \"text\": \"本报告仅供\"}, {\"page\": 1, \"rule_id\": \"literal\", \"text\": \"已记录日志请勿传阅\"}, {\"page\": 1, \"rule_id\": \"literal_search\", \"text\": \"本报告仅供\"}, {\"page\": 1, \"rule_id\": \"literal_search\", \"text\": \"已记录日志请勿传阅\"}], \"redaction_count\": 3, \"output_sha256\": \"b5112068028f0b6b40f085dc325e85f977bc9d725264e7402bfbe2e75",
+      "message": "redaction stdout is not json: warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.\n{\"ok\": true, \"status\": \"completed\", \"page_count\": 22, \"watermark_hits\": [{\"page\": 1, \"rule_id\": \"literal\", \"text\": \"本报告仅供\"}, {\"page\": 1, \"rule_id\": \"literal\", \"text\": \"已记录日志请勿传阅\"}, {\"page\": 1, \"rule_id\": \"literal_search\", \"text\": \"本报告仅供\"}, {\"page\": 1, \"rule_id\": \"literal_search\", \"text\": \"已记录日志请勿传阅\"}], \"redaction_count\": 3, \"output_sha256\": \"a575ea15619dba2cb5ccd8139eb68e103a8e38c4e31bab2f32b545731",
       "fatal": false,
       "retryable": true,
       "detail": {
