@@ -1,0 +1,8 @@
+[
+  {
+    "stage": "sanitization",
+    "reason": "redaction stdout is not json: warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.\n{\"ok\": true, \"status\": \"completed\", \"page_count\": 6, \"watermark_hits\": [{\"page\": 1, \"rule_id\": \"literal\", \"text\": \"本报告仅供\"}, {\"page\": 1, \"rule_id\": \"literal\", \"text\": \"已记录日志请勿传阅\"}, {\"page\": 1, \"rule_id\": \"literal_search\", \"text\": \"本报告仅供\"}, {\"page\": 1, \"rule_id\": \"literal_search\", \"text\": \"已记录日志请勿传阅\"}], \"redaction_count\": 3, \"output_sha256\": \"48d276578c4cf2fce22e1d53223d8638d6afec42a671b633b3a899f2d9",
+    "ticker": "SE",
+    "source_report_id": "43338590"
+  }
+]
