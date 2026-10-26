@@ -1,6 +1,6 @@
 [
   {
-    "run_id": "kanyanbao-2026-10-26-131511",
+    "run_id": "kanyanbao-2026-10-26-191938",
     "no": 1,
     "section": "消费",
     "name": "Sea",
@@ -21,12 +21,12 @@
     ],
     "source_report_id": "43350968",
     "sanitized_pdf_path": "runtime/sanitized_reports/2026-10-26/2026-10-26_SE_43350968_sanitized.pdf",
-    "short_link": "https://lookingfor2018.github.io/kanyanbao/r/3y9VRCu4/",
+    "short_link": "https://lookingfor2018.github.io/kanyanbao/r/1R56Qbi0/",
     "summary_status": "completed",
     "review_required": false,
     "error": null,
     "link_status": "shortened",
-    "signed_url": "https://01753997ca8117ee51fa68250692a9d9.r2.cloudflarestorage.com/kanyanbao-reports/reports/2026-10-26/355ab37ea259fdf22b0bd0f1ea6efb18.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=2f1846599b1dbac611716d8b9a886723%2F20261026%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20261026T051535Z&X-Amz-Expires=604800&X-Amz-Signature=a4d0d1bfd35c0aff2efd1b3ac18bb2d14d6ca266d21ca1e77f28f3ab304ad23c&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-    "storage_object_key": "reports/2026-10-26/355ab37ea259fdf22b0bd0f1ea6efb18.pdf"
+    "signed_url": "https://01753997ca8117ee51fa68250692a9d9.r2.cloudflarestorage.com/kanyanbao-reports/reports/2026-10-26/63bbd1ea4f118442f85b6a854fe6d500.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=2f1846599b1dbac611716d8b9a886723%2F20261026%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20261026T112008Z&X-Amz-Expires=604800&X-Amz-Signature=10cb21dbc2f51c6c63c7397ae21e7eeb018f97aae512787ec2720d25a906a9d9&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "storage_object_key": "reports/2026-10-26/63bbd1ea4f118442f85b6a854fe6d500.pdf"
   }
 ]
