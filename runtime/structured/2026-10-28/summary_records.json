@@ -1,0 +1,32 @@
+[
+  {
+    "run_id": "kanyanbao-2026-10-28-140015",
+    "no": 1,
+    "section": "消费",
+    "name": "Sea",
+    "ticker": "SE",
+    "security": "Sea",
+    "rating": "N/A",
+    "pt": "N/A",
+    "broker": "N/A",
+    "upload_at": "2026-10-28T07:42:00+08:00",
+    "is_new": true,
+    "summary_bullets": [
+      "核心结论：未提及",
+      "评级/目标价：未提及",
+      "驱动因素：未提及",
+      "财务预测：未提及",
+      "风险点：未提及",
+      "重要数字：未提及"
+    ],
+    "source_report_id": "43357028",
+    "sanitized_pdf_path": "runtime/sanitized_reports/2026-10-28/2026-10-28_SE_43357028_sanitized.pdf",
+    "short_link": "https://lookingfor2018.github.io/kanyanbao/r/Gsm89Trz/",
+    "summary_status": "completed",
+    "review_required": false,
+    "error": null,
+    "link_status": "shortened",
+    "signed_url": "https://01753997ca8117ee51fa68250692a9d9.r2.cloudflarestorage.com/kanyanbao-reports/reports/2026-10-28/65a83d18bfdc8c443606e0ec0b41cc56.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=2f1846599b1dbac611716d8b9a886723%2F20261028%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20261028T060036Z&X-Amz-Expires=604800&X-Amz-Signature=954e28e8c8e82323f1b2949ca8f34e9ce4450d6769d140da87f6d6deef1b8467&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "storage_object_key": "reports/2026-10-28/65a83d18bfdc8c443606e0ec0b41cc56.pdf"
+  }
+]
